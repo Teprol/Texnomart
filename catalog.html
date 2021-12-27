@@ -22,10 +22,10 @@
         <!--* закладки -->
         <ul>
             <li>
-                <a href="blank.html"> Закладки: 10</a>
+                <a href="blank.html"> Закладки: 0</a>
             </li>
             <li>
-                <a href="blank.html">Корзина: 0</a>
+                <a href="blank.html">Корзина: 10</a>
             </li>
             <li>
                 <a href="blank.html">Оформить заказ</a>
@@ -77,10 +77,10 @@
     </header>
     <main>
         <ul>
-            <li></li>
-            <li>Каталог</li>
-            <li>Инструмент</li>
-            <li>Перфораторы</li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Перфораторы</a></li>
         </ul>
 
         <h1>ПЕРФОРАТОРЫ</h1>
@@ -88,19 +88,64 @@
         <section>
             <h2>ФИЛЬТР</h2>
             <p>ФИЛЬТР:</p>
-            <!-- *по производителям -->
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <!--* питание -->
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>ЦЕНА:</legend>
+                    <!--* другой дизайн нужен -->
+                    <input type="range" step="1" min="1" max="30000">
+                    <ul>
+                        <li>
+                            <label for="input_min_cena">Минимальная цена</label>
+                            <input type="number" name="Цена" id="input_min_cena" value="0">
+                        </li>
+                        <li>
+                            <label for="input_max_cena">Максимальная цена</label>
+                            <input type="number" name="Цена" id="input_max_cena" value="30000">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                    <!-- *по производителям -->
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="BOSCH" id="input_checkbox_bosch" checked>
+                            <label for="input_checkbox_bosch">BOSCH</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="ИНТЕРСКОЛ" id="input_checkbox_interskol">
+                            <label for="input_checkbox_interskol">ИНТЕРСКОЛ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="MAKIta" id="input_checkbox_MAKITA" checked>
+                            <label for="input_checkbox_MAKITA">MAKITA</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Dewalt" id="input_checkbox_DEWALT">
+                            <label for="input_checkbox_DEWALT">DEWALT</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Hitachi" id="input_checkbox_HITACHI">
+                            <label for="input_checkbox_HITACHI">HITACHI</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>ПИТАНИЕ:</legend>
+                    <!--* питание -->
+                    <ul>
+                        <li>
+                            <input type="radio" name="Питание" id="input_radio_akum" value="АККАМУЛЯТОРНЫЕ" checked>
+                            <label for="input_radio_akum">АККАМУЛЯТОРНЫЕ</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Питание" id="input_radio_set" value="СЕТЕВЫЕ">
+                            <label for="input_radio_set">СЕТЕВЫЕ</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="Показать">
+            </form>
         </section>
 
         <section>
@@ -123,26 +168,106 @@
             <h2>Ассортимент</h2>
             <!--* список товаров -->
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <img src="https://via.placeholder.com/150x100" alt="" width="150" height="100">
+                    <h3>Перфоратор BOSCH<br>BFG 6000</h3>
+                    <p>30500 Р.</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/150x100" alt="" width="150" height="100">
+                    <h3>Перфоратор BOSCH<br>BFG 6000</h3>
+                    <p>30500 Р.</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/150x100" alt="" width="150" height="100">
+                    <h3>Перфоратор BOSCH<br>BFG 6000</h3>
+                    <p>30500 Р.</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/150x100" alt="" width="150" height="100">
+                    <h3>Перфоратор BOSCH<br>BFG 3000</h3>
+                    <p>22500 Р.</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/150x100" alt="" width="150" height="100">
+                    <h3>Перфоратор BOSCH<br>BFG 6000</h3>
+                    <p>30500 Р.</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/150x100" alt="" width="150" height="100">
+                    <h3>Перфоратор BOSCH<br>BFG 2000</h3>
+                    <p></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/150x100" alt="" width="150" height="100">
+                    <h3>Перфоратор BOSCH<br>BFG 3000</h3>
+                    <p>22500 Р.</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/150x100" alt="" width="150" height="100">
+                    <h3>Перфоратор BOSCH<br>BFG 6000</h3>
+                    <p>30500 Р.</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/150x100" alt="" width="150" height="100">
+                    <h3>Перфоратор BOSCH<br>BFG 2000</h3>
+                    <p></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
             </ul>
         </section>
 
         <section>
             <h2>О перфораторах</h2>
             <p>ПАРА СЛОВ О ПЕРФОРАТОРАХ</p>
-            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
-                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+                кирпиче, бетоне и камне.<br>
+                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+                дрели, шуруповерта и отбойного молотка.<br>
+                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
+                ударная дрель.</p>
         </section>
-
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>СЛЕДУЮЩАЯ</li>
+        </ul>
     </main>
 
     <footer>
@@ -151,7 +276,10 @@
 
     <section>
         <h2>Товар добавлен в корзину</h2>
-        <p>Товар добавлен в корзину!</p>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
     </section>
 </body>
 
