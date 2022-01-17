@@ -13,31 +13,32 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="header">
+    <div class="header-content-top">
+      <a class="header-logo" href="/index.html">
+        <img src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
+      </a>
 
-    <a href="/index.html">
-      <img src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
-    </a>
+      <form class="form-search" action="#" method="post">
+        <p class="form-search__content">
+          <label class="form-search__title" for="search">Поиск</label>
+          <input class="form-search__search-input" type="search" name="запрос поиска" id="search" placeholder="Поиск:">
+        </p>
+      </form>
 
-    <form action="#" method="post">
-      <p>
-        <label for="search">Поиск</label>
-        <input type="search" name="запрос поиска" id="search" placeholder="Поиск:">
-      </p>
-    </form>
-
-    <!--* закладки -->
-    <ul>
-      <li>
-        <a href="blank.html"> Закладки: <span>0</span></a>
-      </li>
-      <li>
-        <a href="blank.html">Корзина: <span>10</span></a>
-      </li>
-      <li>
-        <a href="blank.html">Оформить заказ</a>
-      </li>
-    </ul>
+      <!--* закладки -->
+      <ul class="list-bookmarks">
+        <li>
+          <a class="link bookmarks-buttons bookmarks-button" href="blank.html"> Закладки: <span>0</span></a>
+        </li>
+        <li>
+          <a class="link bookmarks-buttons cart-button" href="blank.html">Корзина: <span>0</span></a>
+        </li>
+        <li>
+          <a class="link bookmarks-buttons order-button" href="blank.html">Оформить заказ</a>
+        </li>
+      </ul>
+    </div>
 
     <p>
       <i>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</i>
@@ -109,7 +110,7 @@
     <h1>ПЕРФОРАТОРЫ</h1>
 
     <section>
-      <h2>ФИЛЬТР</h2>
+      <h2 class="visuallyhidden">ФИЛЬТР</h2>
       <p>ФИЛЬТР:</p>
       <form action="#" method="post">
         <fieldset>
@@ -172,7 +173,7 @@
     </section>
 
     <section>
-      <h2>Сортировка</h2>
+      <h2 class="visuallyhidden">Сортировка</h2>
       <p>СОРТИРОВКА:</p>
       <!--* по типу -->
       <ul>
@@ -206,7 +207,7 @@
     </section>
 
     <section>
-      <h2>Ассортимент</h2>
+      <h2 class="visuallyhidden">Ассортимент</h2>
       <!--* список товаров -->
       <ul>
         <li>
@@ -308,7 +309,7 @@
     </section>
 
     <section>
-      <h2>О перфораторах</h2>
+      <h2 class="visuallyhidden">О перфораторах</h2>
       <p>ПАРА СЛОВ О ПЕРФОРАТОРАХ</p>
       <p><b>Перфоратор</b> — универсальный строительный инструмент. Предназначен для сверления и долбления
         отверстий в
@@ -387,17 +388,17 @@
       <ul>
         <li>
           <address>
-            <a href="#"><span>Вконтакте</span></a>
+            <a href="#"><span class="visuallyhidden">Вконтакте</span></a>
           </address>
         </li>
         <li>
           <address>
-            <a href="#"><span>Файсбук</span></a>
+            <a href="#"><span class="visuallyhidden">Файсбук</span></a>
           </address>
         </li>
         <li>
           <address>
-            <a href="#"><span>Инстаграмм</span></a>
+            <a href="#"><span class="visuallyhidden">Инстаграмм</span></a>
           </address>
         </li>
       </ul>
