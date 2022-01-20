@@ -7,12 +7,32 @@ body {
 }
 
 /* !шрифты */
+
+.paragraf-1 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
 .paragraf-2 {
   font-family: Cuprum;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+}
+
+.paragraf-3 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #ffffff;
 }
 
 .zagolovok-4 {
@@ -23,6 +43,16 @@ body {
   line-height: 30px;
 }
 
+.zagolovok-2 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
 .stok_button {
   font-family: Cuprum;
   font-style: normal;
@@ -31,6 +61,73 @@ body {
   line-height: 18px;
 }
 
+.podpis {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #32425c;
+}
+
+.bold-paragraf {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.old-price {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+
+  color: #a9a9a9;
+}
+
+.breadcrumbs {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.zagolovok-6 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.zagolovok-6 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #000000;
+}
 /* промопродукта тайтл */
 .promo-product-card__title {
   font-family: Cuprum;
@@ -40,7 +137,7 @@ body {
   line-height: 30px;
 }
 
-/* !------------------------------------------------------------------------------------------------- */
+/* !скрыть элемент */
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
 
