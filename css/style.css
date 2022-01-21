@@ -2,68 +2,106 @@
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum"),
-      local("My Cuprum"),
-      url(/fonts/cuprum.woff2) format("woff2"),
-      url(/fonts/cuprum.woff) format("woff");
+  src: local("Cuprum"), local("My Cuprum"),
+    url(/fonts/cuprum.woff2) format("woff2"),
+    url(/fonts/cuprum.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum"),
-      local("My Cuprum"),
-      url(/fonts/cuprumbold.woff2) format("woff2"),
-      url(/fonts/cuprumbold.woff) format("woff");
+  src: local("Cuprum"), local("My Cuprum"),
+    url(/fonts/cuprumbold.woff2) format("woff2"),
+    url(/fonts/cuprumbold.woff) format("woff");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum"),
-      local("My Cuprum"),
-      url(/fonts/cuprumbolditalic.woff2) format("woff2"),
-      url(/fonts/cuprumbolditalic.woff) format("woff");
+  src: local("Cuprum"), local("My Cuprum"),
+    url(/fonts/cuprumbolditalic.woff2) format("woff2"),
+    url(/fonts/cuprumbolditalic.woff) format("woff");
   font-style: italic;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum"),
-      local("My Cuprum"),
-      url(/fonts/cuprumitalic.woff2) format("woff2"),
-      url(/fonts/cuprumitalic.woff) format("woff");
+  src: local("Cuprum"), local("My Cuprum"),
+    url(/fonts/cuprumitalic.woff2) format("woff2"),
+    url(/fonts/cuprumitalic.woff) format("woff");
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans"),
-      local("PTSans"),
-      url(/fonts/ptsans.woff2) format("woff2"),
-      url(/fonts/ptsans.woff) format("woff");
+  src: local("PT Sans"), local("PTSans"),
+    url(/fonts/ptsans.woff2) format("woff2"),
+    url(/fonts/ptsans.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans"),
-      local("PTSans"),
-      url(/fonts/ptsansbold.woff2) format("woff2"),
-      url(/fonts/ptsansbold.woff) format("woff");
+  src: local("PT Sans"), local("PTSans"),
+    url(/fonts/ptsansbold.woff2) format("woff2"),
+    url(/fonts/ptsansbold.woff) format("woff");
   font-style: normal;
   font-weight: 700;
+}
+
+/* !цвета */
+:root {
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --text-footer-mid: #F1F5F7;
+  --akcent-color: #ee3643;
+  --hover-akcent-color: #ca2c37;
+  --click-akcent-color: #ba2732;
+  --success: #63a63e;
+  --hover-success: #5fbb2d;
+  --click-success: #518534;
+  --bg-title: #f9f5f0;
+  --bg-title-catalog: #F7F3EC;
+  --bg-gray: #f1f5f7;
+  --bg-header-tel: #F3F7F9;
+  --bg-dark: #293449;
+  --bg-click-dark: #161d29;
+  --bg-hover-dark: #293449;
+  --text-dark: #32425c;
+  --hover-icon: #3d546f;
+  --grey: #c5c5c5;
+  --grey-dark: #a9a9a9;
+  --text-mark: #FFD180;
+  --bg-folback-modal: #F4F4F4;
+  --bg-korzin-modal: #F1F1F1;
+  /** ----------------фоны карточек промо материалов----------------- */
+  --bg-slider-title: rgba(0, 0, 0, 0.25);
+  --bg-promo-materials: #ffbf47;
+  --bg-promo-instrument: #3bbce3;
+  --bg-promo-tehnik: #dc91d8;
+  --bg-promo-sale: #8ed78f;
+  --bg-promo-deliveri: #ffbf47;
+  /* *----------------------тени-------------------- */
+  --shadow-logo: rgba(0, 0, 0, 0.24);
+  --shadow-nav: #293449;
+  --shadow-succes: #367315;
+  --shadow-slide-but: #405069;
+  --shadow-kart-modal: rgba(0, 0, 0, 0.15);
+  --shadow-folback-modal: rgba(0, 0, 0, 0.75);
+  /* *-------------------рамки--------------------- */
+  --border: #EAEAEA;
+  --border-dark: #C5C5C5;
 }
 
 body {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
 }
@@ -73,7 +111,7 @@ body {
 .paragraf-1 {
   font-family: PT Sans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -82,7 +120,7 @@ body {
 .paragraf-2 {
   font-family: Cuprum;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
@@ -90,7 +128,7 @@ body {
 .paragraf-3 {
   font-family: Cuprum;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 
@@ -100,7 +138,7 @@ body {
 .zagolovok-4 {
   font-family: Cuprum;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 30px;
 }
@@ -108,7 +146,7 @@ body {
 .zagolovok-2 {
   font-family: Cuprum;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -118,7 +156,7 @@ body {
 .stok_button {
   font-family: Cuprum;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
@@ -126,7 +164,7 @@ body {
 .podpis {
   font-family: Cuprum;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -137,7 +175,7 @@ body {
 .bold-paragraf {
   font-family: PT Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
@@ -148,7 +186,7 @@ body {
 .old-price {
   font-family: PT Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
@@ -161,7 +199,7 @@ body {
 .breadcrumbs {
   font-family: PT Sans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -172,7 +210,7 @@ body {
 .zagolovok-6 {
   font-family: PT Sans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
@@ -183,7 +221,7 @@ body {
 .zagolovok-6 {
   font-family: Cuprum;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
@@ -194,7 +232,7 @@ body {
 .promo-product-card__title {
   font-family: Cuprum;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
