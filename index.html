@@ -15,29 +15,32 @@
 <body class="page-body">
   <header class="header">
     <div class="header-content-top paragraf-2">
-      <a class="logo header-content-top__logo" href="">
-        <img src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
-      </a>
+      <div class="container">
+        <a class="logo header-content-top__logo" href="">
+          <img src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
+        </a>
 
-      <form class="form-search header-content-top__form-search" action="#" method="post">
-        <p class="form-search__content">
-          <label class="form-search__title" for="search">Поиск</label>
-          <input class="form-search__search-input" type="search" name="запрос поиска" id="search" placeholder="Поиск:">
-        </p>
-      </form>
+        <form class="form-search header-content-top__form-search" action="#" method="post">
+          <p class="form-search__content">
+            <label class="form-search__title" for="search">Поиск</label>
+            <input class="form-search__search-input" type="search" name="запрос поиска" id="search"
+              placeholder="Поиск:">
+          </p>
+        </form>
 
-      <!--* закладки -->
-      <ul class="list list-bookmarks header-content-top__list-bookmarks">
-        <li class="list-bookmarks__item">
-          <a class="link bookmarks-buttons bookmarks-button" href="blank.html"> Закладки: <span>0</span></a>
-        </li>
-        <li class="list-bookmarks__item">
-          <a class="link bookmarks-buttons cart-button" href="blank.html">Корзина: <span>0</span></a>
-        </li>
-        <li class="list-bookmarks__item">
-          <a class="link bookmarks-buttons order-button" href="blank.html">Оформить заказ</a>
-        </li>
-      </ul>
+        <!--* закладки -->
+        <ul class="list list-bookmarks header-content-top__list-bookmarks">
+          <li class="list-bookmarks__item">
+            <a class="link bookmarks-buttons bookmarks-button" href="blank.html"> Закладки: <span>0</span></a>
+          </li>
+          <li class="list-bookmarks__item">
+            <a class="link bookmarks-buttons cart-button" href="blank.html">Корзина: <span>0</span></a>
+          </li>
+          <li class="list-bookmarks__item">
+            <a class="link bookmarks-buttons order-button" href="blank.html">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- *середина шапки сайта -->
@@ -148,9 +151,9 @@
 
     <!--* популярные товары -->
     <section class="popular-goods">
-      <div class="popular-goods__header">
-        <h2 class="popular-goods__title zagolovok-2">Популярные товары</h2>
-        <a class="link stok_button popular-goods__link" href="blank.html">все популярные товары</a>
+      <div class="section-header">
+        <h2 class="section-header__title zagolovok-2">Популярные товары</h2>
+        <a class="link stok_button section-header__link" href="blank.html">все популярные товары</a>
       </div>
       <!--* список товаров -->
       <ul class="list popular-goods__list">
@@ -182,7 +185,7 @@
             <button class="goods-card__button" type="button">15500 Р.</button>
             <ul class="goods-card__list-button">
               <li class="goods-card__item-list">
-                <button class="stok_button"type="button" aria-label="Купить">КУПИТЬ</button>
+                <button class="stok_button" type="button" aria-label="Купить">КУПИТЬ</button>
               </li>
               <li class="goods-card__item-list">
                 <button class="stok_button" type="button" aria-label="В закладки">В закладки</button>
@@ -233,9 +236,9 @@
 
     <!--* популярные производители -->
     <section class="popular-manufacturers">
-      <div class="popular-manufacturers__header">
-        <h2 class="popular-manufacturers__title zagolovok-2">Популярные производители</h2>
-        <a class="link stok_button popular-manufacturers__link" href="blank.html">все производители</a>
+      <div class="section-header">
+        <h2 class="section-header__title zagolovok-2">Популярные производители</h2>
+        <a class="link stok_button section-header__link" href="blank.html">все производители</a>
       </div>
 
       <!--* список производителей -->
@@ -300,82 +303,93 @@
 
     <!--* сервисы -->
     <section class="services">
-      <div class="services__header">
-        <h2 class="services__title zagolovok-2">Сервисы</h2>
-        <p class="services__text paragraf-1">
-          <em class="paragraf-1">Хороший интернет-магазин отличается от плохого не только ценами!<br></em>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
+      <div class="container">
+        <div class="services__header">
+          <h2 class="services__title zagolovok-2">Сервисы</h2>
+          <p class="services__text paragraf-1">
+            <em class="paragraf-1">Хороший интернет-магазин отличается от плохого не только ценами!<br></em>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+        </div>
+        <div class="services__list-buttons zagolovok-4">
+          <button type="button">Доставка</button>
+          <button type="button">Гарантия</button>
+          <button type="button">Кредит</button>
+        </div>
+
+        <!--* слайдер -->
+        <ul class="services__carousel">
+
+          <li class="services__carousel-item">
+            <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Доставка</strong></h3>
+            <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Мы с удовольствием доставим ваш товар
+                прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!</em></p>
+          </li>
+
+          <li class="services__carousel-item">
+            <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Гарантия</strong></h3>
+            <p class="services__carousel-text paragraf-1">Если купленный у нас товар поломается или заискрит,<br>а также
+              в
+              случае
+              пожара, спровоцированного его<br>
+              возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
+              новый.<br>Дом уж восстановите как-нибудь сами.</p>
+          </li>
+
+          <li class="services__carousel-item">
+            <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Кредит</strong></h3>
+            <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Залезть в долговую яму стало
+                проще!<br></em>Кредитные консультанты
+              придут вам на помощь.</p>
+          </li>
+
+        </ul>
       </div>
-      <div class="services__list-buttons zagolovok-4">
-        <button type="button">Доставка</button>
-        <button type="button">Гарантия</button>
-        <button type="button">Кредит</button>
-      </div>
-
-      <!--* слайдер -->
-      <ul class="services__carousel">
-
-        <li class="services__carousel-item">
-          <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Доставка</strong></h3>
-          <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!</em></p>
-        </li>
-
-        <li class="services__carousel-item">
-          <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Гарантия</strong></h3>
-          <p class="services__carousel-text paragraf-1">Если купленный у нас товар поломается или заискрит,<br>а также в случае
-            пожара, спровоцированного его<br>
-            возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
-            новый.<br>Дом уж восстановите как-нибудь сами.</p>
-        </li>
-
-        <li class="services__carousel-item">
-          <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Кредит</strong></h3>
-          <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Залезть в долговую яму стало проще!<br></em>Кредитные консультанты
-            придут вам на помощь.</p>
-        </li>
-
-      </ul>
     </section>
 
     <!--* контайнер с информацией о нас и контактами -->
-    <div class="container">
-      <section class="about-us">
-        <h2 class="visuallyhidden">О нас</h2>
-        <p class="about-us__title zagolovok-2">КОМПАНИЯ «<b class="zagolovok-2">Техномарт</b>»</p>
-        <p class="about-us__text paragraf-1">
-          <em class="paragraf-1">Настоящий мужской шоппинг начинается здесь!</em> Огромный выбор товаров для<br> <b class="paragraf-1">ремонта</b> и
-          <b class="paragraf-1">строительства</b> не оставит
-          равнодушными любителей сэкономить на<br> гастарбайтерах.
-        </p>
-        <p class="about-us__text paragraf-1"><em class="paragraf-1">Мы можем доставить ваш товар в самые отдаленные точки России!</em><br>
-          Техномарт работает со многими транспортными компаниями:</p>
-        <!--* транспортные компании -->
-        <ul class="about-us__list paragraf-2">
-          <li class="about-us__item">
-            <h3><b>Деловые линии</b></h3>
-          </li>
-          <li class="about-us__item">
-            <h3><b>Автотрейдинг</b></h3>
-          </li>
-          <li class="about-us__item">
-            <h3><b>ЖелДорЭкспедиция</b></h3>
-          </li>
-        </ul>
-        <a class="link stok_button about-us__link" href="blank.html">Подробнее о компании</a>
-      </section>
+    <div class="info-kontakts">
+      <div class="container">
+        <section class="about-us">
+          <h2 class="visuallyhidden">О нас</h2>
+          <p class="about-us__title zagolovok-2">КОМПАНИЯ «<b class="zagolovok-2">Техномарт</b>»</p>
+          <p class="about-us__text paragraf-1">
+            <em class="paragraf-1">Настоящий мужской шоппинг начинается здесь!</em> Огромный выбор товаров для<br> <b
+              class="paragraf-1">ремонта</b> и
+            <b class="paragraf-1">строительства</b> не оставит
+            равнодушными любителей сэкономить на<br> гастарбайтерах.
+          </p>
+          <p class="about-us__text paragraf-1"><em class="paragraf-1">Мы можем доставить ваш товар в самые отдаленные
+              точки России!</em><br>
+            Техномарт работает со многими транспортными компаниями:</p>
+          <!--* транспортные компании -->
+          <ul class="about-us__list paragraf-2">
+            <li class="about-us__item">
+              <h3><b>Деловые линии</b></h3>
+            </li>
+            <li class="about-us__item">
+              <h3><b>Автотрейдинг</b></h3>
+            </li>
+            <li class="about-us__item">
+              <h3><b>ЖелДорЭкспедиция</b></h3>
+            </li>
+          </ul>
+          <a class="link stok_button about-us__link" href="blank.html">Подробнее о компании</a>
+        </section>
 
-      <section class="contacts">
-        <h2 class="contacts__title zagolovok-2">Контакты</h2>
-        <p class="contacts__text paragraf-1">Вы можете забрать товар сами,<br>
-          заехав в наш офис:</p>
-        <img class="contacts__img" src="/img/content/img-karta_mini.png" alt="Техномарт на карте" width="300"
-          height="158">
-        <button class="stok_button contacts__link" type="button">Заблудились? Напишите нам!</button>
-      </section>
+        <section class="contacts">
+          <h2 class="contacts__title zagolovok-2">Контакты</h2>
+          <p class="contacts__text paragraf-1">Вы можете забрать товар сами,<br>
+            заехав в наш офис:</p>
+          <img class="contacts__img" src="/img/content/img-karta_mini.png" alt="Техномарт на карте" width="300"
+            height="158">
+          <button class="stok_button contacts__link" type="button">Заблудились? Напишите нам!</button>
+        </section>
+      </div>
+
     </div>
 
   </main>
@@ -432,34 +446,37 @@
     </div>
 
     <div class="footer-footer page-footer__footer">
-      <p class="footer-footer__copy paragraf-3 ">© 2010–2021 Компания «<b class="paragraf-3 ">Техномарт</b>»<br>Все права защищены</p>
-      <!-- *соцсети -->
-      <section class="socials footer-footer__socials">
-        <h2 class="visuallyhidden">Мы в соцсетях</h2>
-        <ul class="socials__list">
-          <li class="socials__item-vk">
-            <address>
-              <a href="#"><span class="visuallyhidden">Вконтакте</span></a>
-            </address>
-          </li>
-          <li class="socials__item-fb">
-            <address>
-              <a href="#"><span class="visuallyhidden">Файсбук</span></a>
-            </address>
-          </li>
-          <li class="socials__item-inst">
-            <address>
-              <a href="#"><span class="visuallyhidden">Инстаграмм</span></a>
-            </address>
-          </li>
-        </ul>
-      </section>
-      <div class="footer-footer__feedback">
-        <address class="paragraf-3 ">
-          Обратная связь:<br>
-          <a class="link paragraf-3 " href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </address>
-        <p class="paragraf-3 ">Разработано —<br><a class="link paragraf-3 " href="#">htmlacademy.ru</a></p>
+      <div class="container footer-footer">
+        <p class="footer-footer__copy paragraf-3 ">© 2010–2021 Компания «<b class="paragraf-3 ">Техномарт</b>»<br>Все
+          права защищены</p>
+        <!-- *соцсети -->
+        <section class="socials footer-footer__socials">
+          <h2 class="visuallyhidden">Мы в соцсетях</h2>
+          <ul class="socials__list">
+            <li class="socials__item-vk">
+              <address>
+                <a href="#"><span class="visuallyhidden">Вконтакте</span></a>
+              </address>
+            </li>
+            <li class="socials__item-fb">
+              <address>
+                <a href="#"><span class="visuallyhidden">Файсбук</span></a>
+              </address>
+            </li>
+            <li class="socials__item-inst">
+              <address>
+                <a href="#"><span class="visuallyhidden">Инстаграмм</span></a>
+              </address>
+            </li>
+          </ul>
+        </section>
+        <div class="footer-footer__feedback">
+          <address class="paragraf-3 ">
+            Обратная связь:<br>
+            <a class="link paragraf-3 " href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </address>
+          <p class="paragraf-3 ">Разработано —<br><a class="link paragraf-3 " href="#">htmlacademy.ru</a></p>
+        </div>
       </div>
     </div>
   </footer>
@@ -484,7 +501,8 @@
 
       <div class="form-user-text feedback__form-user-text">
         <p><label for="Avtorization_text paragraf-2">Текст письма</label></p>
-        <textarea name="текст" id="Avtorization_text paragraf-1" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea name="текст" id="Avtorization_text paragraf-1" cols="30" rows="10"
+          placeholder="В свободной форме"></textarea>
       </div>
 
       <div class="form-submit feedback__form-submit">

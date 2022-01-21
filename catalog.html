@@ -15,29 +15,32 @@
 <body class="page-body">
   <header class="header">
     <div class="header-content-top paragraf-2">
-      <a class="logo header-content-top__logo" href="index.html">
-        <img src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
-      </a>
+      <div class="container">
+        <a class="logo header-content-top__logo" href="index.html">
+          <img src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
+        </a>
 
-      <form class="form-search header-content-top__form-search" action="#" method="post">
-        <p class="form-search__content">
-          <label class="form-search__title" for="search">Поиск</label>
-          <input class="form-search__search-input" type="search" name="запрос поиска" id="search" placeholder="Поиск:">
-        </p>
-      </form>
+        <form class="form-search header-content-top__form-search" action="#" method="post">
+          <p class="form-search__content">
+            <label class="form-search__title" for="search">Поиск</label>
+            <input class="form-search__search-input" type="search" name="запрос поиска" id="search"
+              placeholder="Поиск:">
+          </p>
+        </form>
 
-      <!--* закладки -->
-      <ul class="list list-bookmarks header-content-top__list-bookmarks">
-        <li class="list-bookmarks__item">
-          <a class="link bookmarks-buttons bookmarks-button" href="blank.html"> Закладки: <span>0</span></a>
-        </li>
-        <li class="list-bookmarks__item">
-          <a class="link bookmarks-buttons cart-button" href="blank.html">Корзина: <span>10</span></a>
-        </li>
-        <li class="list-bookmarks__item">
-          <a class="link bookmarks-buttons order-button" href="blank.html">Оформить заказ</a>
-        </li>
-      </ul>
+        <!--* закладки -->
+        <ul class="list list-bookmarks header-content-top__list-bookmarks">
+          <li class="list-bookmarks__item">
+            <a class="link bookmarks-buttons bookmarks-button" href="blank.html"> Закладки: <span>0</span></a>
+          </li>
+          <li class="list-bookmarks__item">
+            <a class="link bookmarks-buttons cart-button" href="blank.html">Корзина: <span>10</span></a>
+          </li>
+          <li class="list-bookmarks__item">
+            <a class="link bookmarks-buttons order-button" href="blank.html">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- *середина шапки сайта -->
@@ -118,7 +121,9 @@
       <li class="breadcrumbs__item"><a class="link" href="#">Перфораторы</a></li>
     </ul>
 
-    <h1 class="page-main__title zagolovok-2">ПЕРФОРАТОРЫ</h1>
+    <div class="section-header-catalog">
+      <h1 class="section-header-catalog__title zagolovok-2">ПЕРФОРАТОРЫ</h1>
+    </div>
 
     <!--* фильтр -->
     <section class="filter page-body-filter">
@@ -438,8 +443,9 @@
 
   </main>
 
+  <!--* подвал сайта -->
   <footer class="page-footer">
-    <div class="footer-header page-footer__header">
+    <div class="footer-header page-footer__header paragraf-2">
       <a class="logo footer-header__logo" href="#"><img src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт"
           width="138" height="23"></a>
       <!--* дублируем навигацию -->
@@ -462,15 +468,13 @@
       </ul>
     </div>
 
-    <div class="footer-midle page-footer__midle">
+    <div class="footer-midle page-footer__midle paragraf-2">
       <div class="footer-midle__address">
         <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         <address>
           <a class="link" href="tel:88005558628">+7 800 555-86-28</a>
         </address>
       </div>
-
-
       <!-- *инструменты и спец предложения -->
       <ul class="nav-promo-list footer-midle__nav-promo-list">
         <li class="nav-promo-list__item">
@@ -490,34 +494,37 @@
     </div>
 
     <div class="footer-footer page-footer__footer">
-      <p class="footer-footer__copy paragraf-3 ">© 2010–2021 Компания «<b>Техномарт</b>»<br>Все права защищены</p>
-      <!-- *соцсети -->
-      <section class="socials footer-footer__socials">
-        <h2 class="visuallyhidden">Мы в соцсетях</h2>
-        <ul class="socials__list">
-          <li class="socials__item-vk">
-            <address>
-              <a href="#"><span class="visuallyhidden">Вконтакте</span></a>
-            </address>
-          </li>
-          <li class="socials__item-fb">
-            <address>
-              <a href="#"><span class="visuallyhidden">Файсбук</span></a>
-            </address>
-          </li>
-          <li class="socials__item-inst">
-            <address>
-              <a href="#"><span class="visuallyhidden">Инстаграмм</span></a>
-            </address>
-          </li>
-        </ul>
-      </section>
-      <div class="footer-footer__feedback">
-        <address class="paragraf-3">
-          Обратная связь:<br>
-          <a class="link paragraf-3 " href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </address>
-        <p class="paragraf-3">Разработано —<br><a class="link paragraf-3 " href="#">htmlacademy.ru</a></p>
+      <div class="container footer-footer">
+        <p class="footer-footer__copy paragraf-3 ">© 2010–2021 Компания «<b class="paragraf-3 ">Техномарт</b>»<br>Все
+          права защищены</p>
+        <!-- *соцсети -->
+        <section class="socials footer-footer__socials">
+          <h2 class="visuallyhidden">Мы в соцсетях</h2>
+          <ul class="socials__list">
+            <li class="socials__item-vk">
+              <address>
+                <a href="#"><span class="visuallyhidden">Вконтакте</span></a>
+              </address>
+            </li>
+            <li class="socials__item-fb">
+              <address>
+                <a href="#"><span class="visuallyhidden">Файсбук</span></a>
+              </address>
+            </li>
+            <li class="socials__item-inst">
+              <address>
+                <a href="#"><span class="visuallyhidden">Инстаграмм</span></a>
+              </address>
+            </li>
+          </ul>
+        </section>
+        <div class="footer-footer__feedback">
+          <address class="paragraf-3 ">
+            Обратная связь:<br>
+            <a class="link paragraf-3 " href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </address>
+          <p class="paragraf-3 ">Разработано —<br><a class="link paragraf-3 " href="#">htmlacademy.ru</a></p>
+        </div>
       </div>
     </div>
   </footer>
