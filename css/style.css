@@ -58,7 +58,7 @@
 :root {
   --text-black: #000000;
   --text-white: #ffffff;
-  --text-footer-mid: #F1F5F7;
+  --text-footer-mid: #f1f5f7;
   --akcent-color: #ee3643;
   --hover-akcent-color: #ca2c37;
   --click-akcent-color: #ba2732;
@@ -66,19 +66,19 @@
   --hover-success: #5fbb2d;
   --click-success: #518534;
   --bg-title: #f9f5f0;
-  --bg-title-catalog: #F7F3EC;
+  --bg-title-catalog: #f7f3ec;
   --bg-gray: #f1f5f7;
-  --bg-header-tel: #F3F7F9;
+  --bg-header-tel: #f3f7f9;
   --bg-dark: #293449;
   --bg-click-dark: #161d29;
-  --bg-hover-dark: #293449;
+  --bg-click-menu-dark: #1d2739;
   --text-dark: #32425c;
   --hover-icon: #3d546f;
   --grey: #c5c5c5;
   --grey-dark: #a9a9a9;
-  --text-mark: #FFD180;
-  --bg-folback-modal: #F4F4F4;
-  --bg-korzin-modal: #F1F1F1;
+  --text-mark: #ffd180;
+  --bg-folback-modal: #f4f4f4;
+  --bg-korzin-modal: #f1f1f1;
   /** ----------------фоны карточек промо материалов----------------- */
   --bg-slider-title: rgba(0, 0, 0, 0.25);
   --bg-promo-materials: #ffbf47;
@@ -94,16 +94,8 @@
   --shadow-kart-modal: rgba(0, 0, 0, 0.15);
   --shadow-folback-modal: rgba(0, 0, 0, 0.75);
   /* *-------------------рамки--------------------- */
-  --border: #EAEAEA;
-  --border-dark: #C5C5C5;
-}
-
-body {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
+  --border: #eaeaea;
+  --border-dark: #c5c5c5;
 }
 
 /* !классы шрифтов */
@@ -114,7 +106,7 @@ body {
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: #000000;
+  color: var(--text-black);
 }
 
 .paragraf-2 {
@@ -132,7 +124,7 @@ body {
   font-size: 16px;
   line-height: 18px;
 
-  color: #ffffff;
+  color: var(--text-white);
 }
 
 .zagolovok-4 {
@@ -150,7 +142,7 @@ body {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #32425c;
+  color: var(--text-dark);
 }
 
 .stok_button {
@@ -169,7 +161,7 @@ body {
   line-height: 24px;
   text-align: center;
 
-  color: #32425c;
+  color: var(--text-dark);
 }
 
 .bold-paragraf {
@@ -179,8 +171,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
-
-  color: #000000;
+  color: var(--text-black);
 }
 
 .old-price {
@@ -193,7 +184,7 @@ body {
   text-decoration-line: line-through;
   text-transform: uppercase;
 
-  color: #a9a9a9;
+  color: var(--grey-dark);
 }
 
 .breadcrumbs {
@@ -204,7 +195,7 @@ body {
   line-height: 18px;
   text-transform: uppercase;
 
-  color: #000000;
+  color: var(--text-black);
 }
 
 .zagolovok-6 {
@@ -215,7 +206,7 @@ body {
   line-height: 19px;
   text-transform: uppercase;
 
-  color: #000000;
+  color: var(--text-black);
 }
 
 .zagolovok-6 {
@@ -226,7 +217,7 @@ body {
   line-height: 30px;
   text-align: center;
 
-  color: #000000;
+  color: var(--text-black);
 }
 /* промопродукта тайтл */
 .promo-product-card__title {
@@ -237,7 +228,17 @@ body {
   line-height: 30px;
 }
 
-/* !скрыть элемент */
+/* !----------------Глобальные стили----------------- */
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--text-black);
+}
+
+/* *скрыть элемент */
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -252,4 +253,70 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.container {
+  width: 940px;
+  margin: auto auto;
+}
+
+/*! ---------------------------шапка сайта-------------------------------- */
+.header {
+  background: var(--text-footer-mid);
+}
+
+.header-content-top {
+  background: var(--bg-dark);
+}
+
+.logo {
+  background: var(--akcent-color);
+}
+
+.form-search__search-input {
+  color: var(--text-white);
+  background: transparent;
+  border: none;
+}
+.form-search__search-input::placeholder {
+  color: var(--text-white);
+}
+
+.bookmarks-buttons {
+  color: var(--text-white);
+}
+
+.order-button {
+  background: var(--success);
+}
+
+.header-content-middle__opisanie * {
+  color: var(--akcent-color);
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.header-content-middle__telefon{
+  box-sizing: border-box;
+  border: 3px solid var(--text-white);
+  text-align: center;
+}
+
+.header-content-middle__telefon .link {
+  color: var(--akcent-color);
 }

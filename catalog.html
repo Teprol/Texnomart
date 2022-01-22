@@ -17,7 +17,7 @@
     <div class="header-content-top paragraf-2">
       <div class="container">
         <a class="logo header-content-top__logo" href="index.html">
-          <img src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
+          <img class="img" src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
         </a>
 
         <form class="form-search header-content-top__form-search" action="#" method="post">
@@ -44,7 +44,7 @@
     </div>
 
     <!-- *середина шапки сайта -->
-    <div class="header-content-middle">
+    <div class="container header-content-middle">
       <p class="header-content-middle__opisanie">
         <i>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</i>
       </p>
@@ -77,7 +77,7 @@
             <span class="visuallyhidden">Выход</span>
           </a>
         </div>
-        <ul class="user-login__list-link paragraf-3">
+        <ul class="list user-login__list-link paragraf-3">
           <li class="user-login__list-item"><a class="link" href="blank.html">Мои заказы</a></li>
           <li class="user-login__list-item"><a class="link" href="blank.html">Личный кабинет</a></li>
         </ul>
@@ -85,7 +85,7 @@
     </div>
 
     <!-- *навигация главная -->
-    <nav class="main-navigation paragraf-2">
+    <nav class="container main-navigation paragraf-2">
       <ul class="list main-navigation__list">
         <li class="main-navigation__item">
           <a class="link" href="blank.html">Главная</a>
@@ -114,7 +114,7 @@
 
   <main class="page-main">
     <!--* хлебные крошки -->
-    <ul class="breadcrumbs page-main__breadcrumbs-list">
+    <ul class="list breadcrumbs page-main__breadcrumbs-list">
       <li class="breadcrumbs__item"><a class="link" href="#"></a></li>
       <li class="breadcrumbs__item"><a class="link" href="#">Каталог</a></li>
       <li class="breadcrumbs__item"><a class="link" href="#">Инструмент</a></li>
@@ -135,7 +135,7 @@
           <legend class="form-cena__title">ЦЕНА:</legend>
           <!--! другой дизайн нужен -->
           <input class="form-cena__range" type="range" step="1" min="1" max="30000">
-          <ul class="form-cena__list">
+          <ul class="list form-cena__list">
             <li class="form-cena__item">
               <label for="input_min_cena">Минимальная цена</label>
               <input type="number" name="Цена" id="input_min_cena" value="0">
@@ -150,7 +150,7 @@
         <fieldset class="form-manufacturers">
           <legend class="form-manufacturers__title">ПРОИЗВОДИТЕЛИ:</legend>
           <!-- *по производителям -->
-          <ul class="form-manufacturers__list">
+          <ul class="list form-manufacturers__list">
             <li class="form-manufacturers__item">
               <input type="checkbox" name="BOSCH" id="input_checkbox_bosch" checked>
               <label for="input_checkbox_bosch zagolovok-6">BOSCH</label>
@@ -177,7 +177,7 @@
         <fieldset class="nutrition">
           <legend class="nutrition__title">ПИТАНИЕ:</legend>
           <!--* питание -->
-          <ul class="nutrition__list">
+          <ul class="list nutrition__list">
             <li class="nutrition__item">
               <input type="radio" name="Питание" id="input_radio_akum" value="АККАМУЛЯТОРНЫЕ" checked>
               <label for="input_radio_akum zagolovok-6">АККАМУЛЯТОРНЫЕ</label>
@@ -200,7 +200,7 @@
         <h2 class="visuallyhidden">Сортировка</h2>
         <p class="sorting__title">СОРТИРОВКА:</p>
         <!--* по типу -->
-        <ul class="sorting__list">
+        <ul class="list sorting__list">
           <li class="sorting__item">
             <button>ПО ЦЕНЕ</button>
           </li>
@@ -212,7 +212,7 @@
           </li>
         </ul>
         <!--* стрелочки -->
-        <ul class="sorting__arrows-list">
+        <ul class="list sorting__arrows-list">
           <li class="sorting__arrows-item">
             <button type="button" aria-label="с низу в верх">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -236,15 +236,15 @@
         <h2 class="visuallyhidden">Ассортимент</h2>
 
         <!--* список товаров -->
-        <ul class="products-list__list">
+        <ul class="list products-list__list">
           <li class="products-list__item">
             <article class="goods-card">
-              <img class="goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
+              <img class="img goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
                 width="144" height="128">
               <h3 class="goods-card__title">Перфоратор BOSCH<br>BFG 6000</h3>
               <p class="goods-card__old-value"><s class="old-price">30500 Р.</s></p>
               <button class="goods-card__button">25500 Р.</button>
-              <ul class="goods-card__list-button">
+              <ul class="list goods-card__list-button">
                 <li class="goods-card__item-list">
                   <button class="stok_button" type="button" aria-label="Купить">КУПИТЬ</button>
                 </li>
@@ -257,12 +257,12 @@
 
           <li class="products-list__item">
             <article class="goods-card">
-              <img class="goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
+              <img class="img goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
                 width="144" height="128">
               <h3 class="goods-card__title">Перфоратор BOSCH<br>BFG 6000</h3>
               <p class="goods-card__old-value"><s class="old-price">30500 Р.</s></p>
               <button class="goods-card__button">25500 Р.</button>
-              <ul class="goods-card__list-button">
+              <ul class="list goods-card__list-button">
                 <li class="goods-card__item-list">
                   <button class="stok_button" type="button" aria-label="Купить">КУПИТЬ</button>
                 </li>
@@ -275,12 +275,12 @@
 
           <li class="products-list__item">
             <article class="goods-card">
-              <img class="goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
+              <img class="img goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
                 width="144" height="128">
               <h3 class="goods-card__title">Перфоратор BOSCH<br>BFG 6000</h3>
               <p class="goods-card__old-value"><s class="old-price">30500 Р.</s></p>
               <button class="goods-card__button">25500 Р.</button>
-              <ul class="goods-card__list-button">
+              <ul class="list goods-card__list-button">
                 <li class="goods-card__item-list">
                   <button class="stok_button" type="button" aria-label="Купить">КУПИТЬ</button>
                 </li>
@@ -294,12 +294,12 @@
 
           <li class="products-list__item">
             <article class="goods-card">
-              <img class="goods-card__img" src="/img/content/img-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000"
+              <img class="img goods-card__img" src="/img/content/img-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000"
                 width="127" height="112">
               <h3 class="goods-card__title">Перфоратор BOSCH<br>BFG 3000</h3>
               <p class="goods-card__old-value"><s class="old-price">22500 Р.</s></p>
               <button class="goods-card__button">15500 Р.</button>
-              <ul class="goods-card__list-button">
+              <ul class="list goods-card__list-button">
                 <li class="goods-card__item-list">
                   <button class="stok_button" type="button" aria-label="Купить">КУПИТЬ</button>
                 </li>
@@ -313,12 +313,12 @@
 
           <li class="products-list__item">
             <article class="goods-card">
-              <img class="goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
+              <img class="img goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
                 width="144" height="128">
               <h3 class="goods-card__title">Перфоратор BOSCH<br>BFG 6000</h3>
               <p class="goods-card__old-value"><s class="old-price">30500 Р.</s></p>
               <button class="goods-card__button">25500 Р.</button>
-              <ul class="goods-card__list-button">
+              <ul class="list goods-card__list-button">
                 <li class="goods-card__item-list">
                   <button class="stok_button" type="button" aria-label="Купить">КУПИТЬ</button>
                 </li>
@@ -331,12 +331,12 @@
 
           <li class="products-list__item">
             <article class="goods-card">
-              <img class="goods-card__img" src="/img/content/img-bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000"
+              <img class="img goods-card__img" src="/img/content/img-bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000"
                 width="127" height="112">
               <h3 class="goods-card__title">Перфоратор BOSCH<br>BFG 2000</h3>
               <p class="goods-card__old-value"><s class="old-price"></s></p>
               <button class="goods-card__button">12500 Р.</button>
-              <ul class="goods-card__list-button">
+              <ul class="list goods-card__list-button">
                 <li class="goods-card__item-list">
                   <button class="stok_button" ype="button" aria-label="Купить">КУПИТЬ</button>
                 </li>
@@ -350,12 +350,12 @@
 
           <li class="products-list__item">
             <article class="goods-card">
-              <img class="goods-card__img" src="/img/content/img-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000"
+              <img class="img goods-card__img" src="/img/content/img-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000"
                 width="127" height="112">
               <h3 class="goods-card__title">Перфоратор BOSCH<br>BFG 3000</h3>
               <p class="goods-card__old-value"><s class="old-price">22500 Р.</s></p>
               <button class="goods-card__button">15500 Р.</button>
-              <ul class="goods-card__list-button">
+              <ul class="list goods-card__list-button">
                 <li class="goods-card__item-list">
                   <button class="stok_button" type="button" aria-label="Купить">КУПИТЬ</button>
                 </li>
@@ -369,12 +369,12 @@
 
           <li class="products-list__item">
             <article class="goods-card">
-              <img class="goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
+              <img class="img goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
                 width="144" height="128">
               <h3 class="goods-card__title">Перфоратор BOSCH<br>BFG 6000</h3>
               <p class="goods-card__old-value"><s class="old-price">30500 Р.</s></p>
               <button class="goods-card__button">25500 Р.</button>
-              <ul class="goods-card__list-button">
+              <ul class="list goods-card__list-button">
                 <li class="goods-card__item-list">
                   <button class="stok_button" type="button" aria-label="Купить">КУПИТЬ</button>
                 </li>
@@ -387,12 +387,12 @@
 
           <li class="products-list__item">
             <article class="goods-card">
-              <img class="goods-card__img" src="/img/content/img-bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000"
+              <img class="img goods-card__img" src="/img/content/img-bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000"
                 width="127" height="112">
               <h3 class="goods-card__title">Перфоратор BOSCH<br>BFG 2000</h3>
               <p class="goods-card__old-value"><s class="old-price"></s></p>
               <button class="goods-card__button">12500 Р.</button>
-              <ul class="goods-card__list-button">
+              <ul class="list goods-card__list-button">
                 <li class="goods-card__item-list">
                   <button class="stok_button" type="button" aria-label="Купить">КУПИТЬ</button>
                 </li>
@@ -446,10 +446,10 @@
   <!--* подвал сайта -->
   <footer class="page-footer">
     <div class="footer-header page-footer__header paragraf-2">
-      <a class="logo footer-header__logo" href="#"><img src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт"
+      <a class="logo footer-header__logo" href="#"><img class="img" src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт"
           width="138" height="23"></a>
       <!--* дублируем навигацию -->
-      <ul class="footer-nav footer-header__list">
+      <ul class="list footer-nav footer-header__list">
         <li class="footer-nav__item">
           <a class="link" href="blank.html">Компания</a>
         </li>
@@ -476,7 +476,7 @@
         </address>
       </div>
       <!-- *инструменты и спец предложения -->
-      <ul class="nav-promo-list footer-midle__nav-promo-list">
+      <ul class="list nav-promo-list footer-midle__nav-promo-list">
         <li class="nav-promo-list__item">
           <a class="link" href="blank.html">Материалы</a>
 
@@ -500,7 +500,7 @@
         <!-- *соцсети -->
         <section class="socials footer-footer__socials">
           <h2 class="visuallyhidden">Мы в соцсетях</h2>
-          <ul class="socials__list">
+          <ul class="list socials__list">
             <li class="socials__item-vk">
               <address>
                 <a href="#"><span class="visuallyhidden">Вконтакте</span></a>
@@ -532,7 +532,7 @@
   <!--* модальное окно о успешном добавлении в карзину -->
   <section class="modal-item-cart">
     <h2 class="modal-item-cart__title zagolovok-6">Товар добавлен в корзину</h2>
-    <ul class="modal-item-cart__list">
+    <ul class="list modal-item-cart__list">
       <li class="modal-item-cart__item">
         <a class="link stok_button" href="#">ОФОРМИТЬ ЗАКАЗ</a>
       </li>
