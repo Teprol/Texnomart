@@ -98,12 +98,80 @@
   --border: #eaeaea;
   --border-dark: #c5c5c5;
   --bg-icon-social: #212a3a;
+  --bord-submit-filter: #e5e5e5;
+}
+
+/* !----------------Глобальные стили----------------- */
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--text-black);
+}
+
+/* *скрыть элемент */
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--text-black);
+}
+
+.img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 940px;
+  margin: auto auto;
+  box-sizing: border-box;
+}
+
+/*? переопределяет стили некоторых заголовков на черные */
+h2[class*="__title"],
+p[class*="__title"] *,
+p[class*="__title"] {
+  color: black;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* !классы шрифтов */
 
 .paragraf-1 {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -148,7 +216,7 @@
 }
 
 .stok_button-text,
-input[type="submit"]{
+input[type="submit"] {
   font-family: Cuprum;
   font-style: normal;
   font-weight: 400;
@@ -171,7 +239,7 @@ input[type="submit"]{
 }
 
 .bold-paragraf {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -181,7 +249,7 @@ input[type="submit"]{
 }
 
 .old-price {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -194,7 +262,7 @@ input[type="submit"]{
 }
 
 .breadcrumbs {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -205,7 +273,7 @@ input[type="submit"]{
 }
 
 .zagolovok-6 {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -215,7 +283,7 @@ input[type="submit"]{
   color: var(--text-black);
 }
 
-.zagolovok-6 {
+.zagolovok-3 {
   font-family: Cuprum;
   font-style: normal;
   font-weight: 700;
@@ -234,74 +302,27 @@ input[type="submit"]{
   line-height: 30px;
 }
 
-/* !----------------Глобальные стили----------------- */
-body {
-  font-family: "PT Sans", Arial, sans-serif;
+.text-filter-input {
+  font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
   color: var(--text-black);
 }
 
-/* *скрыть элемент */
-.visuallyhidden:not(:focus):not(:active) {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.form-filter legend[class*="__title"] {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black);
 }
-
-.link {
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
-.img {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.list {
-  list-style-type: none;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  width: 940px;
-  margin: auto auto;
-  box-sizing: border-box;
-}
-
-/*? переопределяет стили некоторых заголовков на черные */
-h2[class*="__title"],
-p[class*="__title"] *,
-p[class*="__title"] {
-  color: black;
-}
-
-button,
-input[type="submit"] {
-  cursor: pointer;
-  border: none;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* .bg-red {
-  background: var(--akcent-color);
-} */
 
 /*! ---------------------------шапка сайта-------------------------------- */
 .header {
@@ -361,6 +382,11 @@ input[type="submit"] {
 
 .header-content-middle__user-login .link {
   background: var(--text-white);
+}
+
+.user-login__list-link .link {
+  background: transparent;
+  color: var(--text-dark);
 }
 
 .main-navigation__list,
@@ -433,7 +459,7 @@ input[type="submit"] {
   border: none;
   background: var(--akcent-color);
 
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -488,13 +514,53 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+/* !----------------------------main-catalog--------------------------------- */
+.section-header-catalog,
+.description-product {
+  background: var(--bg-gray);
+}
+
+.filter__title,
+.form-cena input,
+.sorting {
+  background: var(--bg-title-catalog);
+}
+
+.sorting button {
+  background: none;
+}
+
+.form-filter .filter__show {
+  background: var(--text-white);
+  color: var(--text-black);
+  font-family: "PT Sans";
+  border: 1px solid var(--bord-submit-filter);
+  box-sizing: border-box;
+}
+
+/*! ----------------------------сортировка------------------------------ */
+.sorting__list button {
+  border-bottom: 1px dotted var(--akcent-color);
+}
+.sorting__list span {
+  opacity: 0.3;
+}
+
+button.sorting__button_active {
+  color: var(--akcent-color);
+  border: none;
+}
+
+.sorting__button_active > span {
+  opacity: 1;
+}
 /* !--------------------------подвал---------------------- */
 .page-footer {
   background: var(--text-dark);
 }
 
 .page-footer * {
-  color: var(--text-white);
+  color: var(--text-footer-mid);
 }
 
 .nav-promo-list * {
@@ -503,6 +569,10 @@ input[type="submit"] {
 
 .footer-footer {
   background: var(--bg-dark);
+}
+
+.footer-footer * {
+  color: var(--text-white);
 }
 
 .socials__list a {
@@ -516,7 +586,6 @@ input[type="submit"] {
 .footer-footer__feedback a {
   color: var(--text-mark);
 }
-
 
 /*! ----------------------модальные окна------------------------- */
 .modal {
