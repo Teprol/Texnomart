@@ -97,6 +97,7 @@
   /* *-------------------рамки--------------------- */
   --border: #eaeaea;
   --border-dark: #c5c5c5;
+  --bg-icon-social: #212a3a;
 }
 
 /* !классы шрифтов */
@@ -146,7 +147,8 @@
   color: var(--text-dark);
 }
 
-.stok_button-text {
+.stok_button-text,
+input[type="submit"]{
   font-family: Cuprum;
   font-style: normal;
   font-weight: 400;
@@ -154,6 +156,7 @@
   line-height: 18px;
   text-transform: uppercase;
   background: var(--akcent-color);
+  color: var(--text-white);
 }
 
 .podpis {
@@ -260,19 +263,40 @@ body {
 
 .link {
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .img {
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 .list {
   list-style-type: none;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
   width: 940px;
   margin: auto auto;
+  box-sizing: border-box;
+}
+
+/*? переопределяет стили некоторых заголовков на черные */
+h2[class*="__title"],
+p[class*="__title"] *,
+p[class*="__title"] {
+  color: black;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* .bg-red {
@@ -282,20 +306,24 @@ body {
 /*! ---------------------------шапка сайта-------------------------------- */
 .header {
   background: var(--text-footer-mid);
+  box-sizing: border-box;
 }
 
 .header-content-top {
   background: var(--bg-dark);
+  box-sizing: border-box;
 }
 
 .logo {
   background: var(--akcent-color);
+  box-sizing: border-box;
 }
 
 .form-search__search-input {
   color: var(--text-white);
   background: transparent;
   border: none;
+  box-sizing: border-box;
 }
 .form-search__search-input::placeholder {
   color: var(--text-white);
@@ -303,10 +331,12 @@ body {
 
 .bookmarks-buttons {
   color: var(--text-white);
+  box-sizing: border-box;
 }
 
 .order-button {
   background: var(--success);
+  box-sizing: border-box;
 }
 
 .header-content-middle__opisanie * {
@@ -316,6 +346,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
+  box-sizing: border-box;
 }
 
 .header-content-middle__telefon {
@@ -382,4 +413,121 @@ body {
   line-height: 36px;
   align-items: center;
   text-transform: uppercase;
+}
+
+/* !-----------------------------main------------------------------------ */
+/* !--------------------------популярные товары--------------------------------------- */
+.section-header {
+  background: var(--bg-title);
+}
+
+.goods-card {
+  box-sizing: border-box;
+  border: solid 1px var(--border);
+}
+
+.goods-card > button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: var(--akcent-color);
+
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.goods-card__item-list:nth-of-type(1) button {
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: var(--success);
+  border-radius: 2px;
+  box-shadow: inset 0px -3px 0px var(--shadow-succes);
+}
+
+.goods-card__item-list:nth-of-type(2) button {
+  box-sizing: border-box;
+  border: 3px solid var(--success);
+  padding: 0;
+  margin: 0;
+  background: var(--text-white);
+  color: var(--text-dark);
+  border-radius: 2px;
+}
+
+/* !-------------------------------популярные производители--------------------------------------------- */
+
+.popular-manufacturers__item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+}
+
+/* !-------------------------------сервисы------------------------------- */
+.services {
+  background: var(--text-footer-mid);
+}
+
+.services__list-buttons button {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text-white);
+  background: var(--text-dark);
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  cursor: pointer;
+}
+
+/* !--------------------------подвал---------------------- */
+.page-footer {
+  background: var(--text-dark);
+}
+
+.page-footer * {
+  color: var(--text-white);
+}
+
+.nav-promo-list * {
+  color: var(--text-mark);
+}
+
+.footer-footer {
+  background: var(--bg-dark);
+}
+
+.socials__list a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bg-icon-social);
+}
+
+.footer-footer__feedback a {
+  color: var(--text-mark);
+}
+
+
+/*! ----------------------модальные окна------------------------- */
+.modal {
+  border-top: 7px solid var(--akcent-color);
+  background: var(--text-white);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form-submit,
+.modal-item-cart__list {
+  background: var(--bg-folback-modal);
 }
