@@ -58,6 +58,7 @@
 :root {
   --text-black: #000000;
   --text-white: #ffffff;
+  --text-white-30: rgba(250, 250, 250, 0.3);
   --text-footer-mid: #f1f5f7;
   --akcent-color: #ee3643;
   --hover-akcent-color: #ca2c37;
@@ -145,12 +146,14 @@
   color: var(--text-dark);
 }
 
-.stok_button {
+.stok_button-text {
   font-family: Cuprum;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+  background: var(--akcent-color);
 }
 
 .podpis {
@@ -272,6 +275,10 @@ body {
   margin: auto auto;
 }
 
+/* .bg-red {
+  background: var(--akcent-color);
+} */
+
 /*! ---------------------------шапка сайта-------------------------------- */
 .header {
   background: var(--text-footer-mid);
@@ -311,7 +318,7 @@ body {
   line-height: 23px;
 }
 
-.header-content-middle__telefon{
+.header-content-middle__telefon {
   box-sizing: border-box;
   border: 3px solid var(--text-white);
   text-align: center;
@@ -319,4 +326,60 @@ body {
 
 .header-content-middle__telefon .link {
   color: var(--akcent-color);
+}
+
+.header-content-middle__user-login .link {
+  background: var(--text-white);
+}
+
+.main-navigation__list,
+.main-navigation__item .link {
+  background: var(--text-dark);
+  color: var(--text-white);
+}
+
+/* !----------------------промо ассортимент товаров-------------------------- */
+.promo-product-card__link {
+  background: var(--text-white-30);
+  color: var(--text-white);
+}
+
+.promo-product-card__title {
+  color: var(--text-white);
+}
+
+.promo-product__card-material {
+  background: var(--bg-promo-materials);
+}
+
+.promo-product__card-instrument {
+  background: var(--bg-promo-instrument);
+}
+
+.promo-product__card-technics {
+  background: var(--bg-promo-tehnik);
+}
+
+.promo-product__card-sale {
+  background: var(--bg-promo-sale);
+}
+
+.promo-product__card-deliveri {
+  background: var(--bg-promo-deliveri);
+}
+
+/*! --------------------карусель в промо-------------------- */
+.carousel__header {
+  background: var(--bg-slider-title);
+  color: var(--text-white);
+}
+
+.carousel__title {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  align-items: center;
+  text-transform: uppercase;
 }
