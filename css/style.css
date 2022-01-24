@@ -395,6 +395,19 @@ input[type="submit"] {
   color: var(--text-white);
 }
 
+/* *--------------------------интерактивность шапки----------------------------------------- */
+.form-search__content_active:hover::before,
+.list-bookmarks__item:nth-of-type(-n + 2):hover::before {
+  opacity: 0.3;
+}
+
+.list-bookmarks__item:nth-of-type(3):hover a {
+  background: var(--hover-success);
+}
+
+.logo_active:active {
+  background: var(--click-akcent-color);
+}
 /* !----------------------промо ассортимент товаров-------------------------- */
 .promo-product-card__link {
   background: var(--text-white-30);
