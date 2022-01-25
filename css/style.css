@@ -76,7 +76,9 @@
   --text-dark: #32425c;
   --hover-icon: #3d546f;
   --grey: #c5c5c5;
+  --grey-03: rgba(197, 197, 197, 0.3);
   --grey-dark: #a9a9a9;
+  --grey-dark-03: rgba(169, 169, 169, 0.3);
   --text-mark: #ffd180;
   --bg-folback-modal: #f4f4f4;
   --bg-korzin-modal: #f1f1f1;
@@ -150,7 +152,16 @@ body {
   margin: auto auto;
   box-sizing: border-box;
 }
+/** интерактив сток кнопки */
+.button-defolt-interactiv:hover,
+.goods-card__button:hover {
+  background: var(--hover-akcent-color);
+}
 
+.button-defolt-interactiv:active,
+.goods-card__button:active {
+  background: var(--click-akcent-color);
+}
 /*? переопределяет стили некоторых заголовков на черные */
 h2[class*="__title"],
 p[class*="__title"] *,
@@ -480,6 +491,16 @@ input[type="submit"] {
   color: var(--grey);
   fill: var(--grey);
 }
+
+/* изминени при наведении на меню */
+.main-navigation__item:hover .link{
+  background: var(--bg-dark);
+}
+
+/* изминен при нажатии по меню */
+.main-navigation__item:active .link {
+  background: var(--bg-click-menu-dark);
+}
 /* !----------------------промо ассортимент товаров-------------------------- */
 .promo-product-card__link {
   background: var(--text-white-30);
@@ -509,8 +530,25 @@ input[type="submit"] {
 .promo-product__card-deliveri {
   background: var(--bg-promo-deliveri);
 }
+/** --------------------------интерактив промо--------------------------------- */
+/* наведение на кнопку  */
+.promo-product-card__link:hover {
+  background: var(--grey-03);
+}
+
+/* нажатие кнопки */
+.promo-product-card__link:active {
+  background: var(--grey-dark-03);
+}
 
 /*! --------------------карусель в промо-------------------- */
+.carousel__item-drill {
+  background: var(--grey) url(/img/fons/carusel_dreli.jpg) no-repeat;
+}
+
+.carousel__item-perforator {
+  background: var(--grey) url(/img/fons/carusel_perforator.png) no-repeat;
+}
 .carousel__header {
   background: var(--bg-slider-title);
   color: var(--text-white);
@@ -595,7 +633,7 @@ input[type="submit"] {
   padding: 0;
   color: var(--text-white);
   background: var(--text-dark);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px var(--bg-dark), inset 0px 1px 0px var(--bg-dark);
   cursor: pointer;
 }
 
