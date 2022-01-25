@@ -130,13 +130,12 @@ body {
 
 .link {
   text-decoration: none;
-  box-sizing: border-box;
   color: var(--text-black);
 }
 
 .img {
   max-width: 100%;
-  box-sizing: border-box;
+  height: auto;
 }
 
 .list {
@@ -345,6 +344,13 @@ input[type="submit"] {
   background: transparent;
   border: none;
   box-sizing: border-box;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #000000;
 }
 .form-search__search-input::placeholder {
   color: var(--text-white);
@@ -355,7 +361,7 @@ input[type="submit"] {
   box-sizing: border-box;
 }
 
-.order-button {
+.list-bookmarks__item:nth-of-type(3) {
   background: var(--success);
   box-sizing: border-box;
 }
@@ -394,19 +400,85 @@ input[type="submit"] {
   background: var(--text-dark);
   color: var(--text-white);
 }
-
+/* !------------------------------шапка каталога----------------------------*/
+.user-login__container a:nth-of-type(1) {
+  color: var(--text-black);
+}
 /* *--------------------------интерактивность шапки----------------------------------------- */
 .form-search__content_active:hover::before,
 .list-bookmarks__item:nth-of-type(-n + 2):hover::before {
-  opacity: 0.3;
+  opacity: 1;
 }
 
-.list-bookmarks__item:nth-of-type(3):hover a {
+.list-bookmarks__item:nth-of-type(3):hover {
   background: var(--hover-success);
 }
 
 .logo_active:active {
   background: var(--click-akcent-color);
+}
+
+.list-bookmarks__item:nth-of-type(-n + 2):active {
+  background: var(--bg-click-dark);
+}
+
+.list-bookmarks__item:nth-of-type(-n + 2):active a {
+  opacity: 0.5;
+}
+
+.list-bookmarks__item:nth-of-type(3):active a {
+  opacity: 0.5;
+}
+
+.form-search__search-input:focus {
+  background: var(--text-white);
+  border: none;
+  outline: none;
+  color: var(--text-black);
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* фокус в поле поиска */
+.form-search__search-input:focus::placeholder {
+  color: var(--text-black);
+
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* наведение на кнопки регистра и войти  */
+.header-content-middle__login:hover,
+.header-content-middle__registration:hover,
+.user-login__list-item:hover .link {
+  color: var(--akcent-color);
+}
+
+/* измин занчков свг при наведении */
+.header-content-middle__login:hover path,
+.user-login__container a:hover path {
+  fill: var(--hover-icon);
+}
+
+/* изминения кнопок мои заказы и личн кабинет при нажатии  */
+.header-content-middle__login:active,
+.header-content-middle__registration:active {
+  color: var(--grey);
+}
+
+/* изменение авторизован пользователя при клике */
+.user-login__list-item:active .link,
+.user-login__container:active a,
+.header-content-middle__login:active path,
+.user-login__container a:active path {
+  color: var(--grey);
+  fill: var(--grey);
 }
 /* !----------------------промо ассортимент товаров-------------------------- */
 .promo-product-card__link {
