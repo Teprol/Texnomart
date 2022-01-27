@@ -706,20 +706,34 @@ input[type="submit"] {
 }
 
 /*! ----------------------------сортировка------------------------------ */
-.sorting__list button {
+.sorting__button {
   border-bottom: 1px dotted var(--akcent-color);
 }
-.sorting__list span {
+.sorting__button span {
   opacity: 0.3;
 }
 
-button.sorting__button_active {
+.sorting__button_active span{
   color: var(--akcent-color);
   border: none;
+  opacity: 1;
 }
 
-.sorting__button_active > span {
+.sorting__arrows-button-active path {
+  fill: #ee3643;
+}
+
+/** ---------------интерактив сортировки--------------- */
+.sorting__button:hover {
+  border-bottom: 1px solid red;
+}
+.sorting__button:hover span {
   opacity: 1;
+  color: var(--text-black);
+}
+
+.arrows-button:hover path {
+  fill: var(--text-black);
 }
 /* !--------------------------подвал---------------------- */
 .page-footer {
