@@ -178,6 +178,29 @@ input[type="submit"] {
   box-sizing: border-box;
 }
 
+/* наклейка новое */
+.new::before {
+  content: "new";
+  display: block;
+  box-sizing: border-box;
+  width: 100px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-white);
+  background: var(--akcent-color);
+  transform: rotate(45deg);
+}
+
+/* тени при наведении */
+.goods-card:hover,
+.popular-manufacturers__item:hover {
+  box-shadow: 0 4px 20px var(--shadow-kart-modal);
+}
 /* !классы шрифтов */
 
 .paragraf-1 {
@@ -493,7 +516,7 @@ input[type="submit"] {
 }
 
 /* изминени при наведении на меню */
-.main-navigation__item:hover .link{
+.main-navigation__item:hover .link {
   background: var(--bg-dark);
 }
 
@@ -612,6 +635,24 @@ input[type="submit"] {
   border-radius: 2px;
 }
 
+/** -------------------интерактив стили для популяр товар-------------------- */
+/* кнопки в карточке */
+.goods-card__item-list:nth-of-type(1) button:hover {
+  background: var(--hover-success);
+}
+
+.goods-card__item-list:nth-of-type(1) button:active {
+  background: var(--click-success);
+}
+
+.goods-card__item-list:nth-of-type(2) button:hover {
+  border: 3px solid var(--text-dark);
+}
+
+.goods-card__item-list:nth-of-type(2) button:active {
+  border: 3px solid var(--text-dark);
+  opacity: 0.5;
+}
 /* !-------------------------------популярные производители--------------------------------------------- */
 
 .popular-manufacturers__item {
@@ -620,7 +661,10 @@ input[type="submit"] {
   padding: 0;
   border: 1px solid var(--border);
 }
-
+/* *---------интерактив производителя по клику------- */
+.popular-manufacturers__item:active {
+  opacity: 0.5;
+}
 /* !-------------------------------сервисы------------------------------- */
 .services {
   background: var(--text-footer-mid);
@@ -717,6 +761,7 @@ button.sorting__button_active {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-shadow: 0 4px 20px var(--shadow-kart-modal);
 }
 
 .form-submit,
