@@ -754,12 +754,17 @@ input[type="submit"] {
 .pagination__item a:active {
   border: 2px solid var(--akcent-color);
 }
+
+.pagination__item-active {
+  background: var(--akcent-color);
+  border: none;
+}
 /* !--------------------------подвал---------------------- */
 .page-footer {
   background: var(--text-dark);
 }
 
-.page-footer * {q
+.page-footer * {
   color: var(--text-footer-mid);
 }
 
