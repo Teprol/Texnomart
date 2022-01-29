@@ -735,12 +735,31 @@ input[type="submit"] {
 .arrows-button:hover path {
   fill: var(--text-black);
 }
+
+/* !-------------------погинация--------------------------- */
+.pagination__list {
+  list-style-type: none;
+}
+
+.pagination__item a {
+  border: 1px solid var(--bord-submit-filter);
+  border-radius: 2px;
+}
+
+/* *---------------интерактив погинация----------------- */
+.pagination__item a:hover {
+  border: 2px solid var(--border-dark);
+}
+
+.pagination__item a:active {
+  border: 2px solid var(--akcent-color);
+}
 /* !--------------------------подвал---------------------- */
 .page-footer {
   background: var(--text-dark);
 }
 
-.page-footer * {
+.page-footer * {q
   color: var(--text-footer-mid);
 }
 
