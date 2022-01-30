@@ -677,7 +677,8 @@ input[type="submit"] {
   padding: 0;
   color: var(--text-white);
   background: var(--text-dark);
-  box-shadow: 0px 1px 0px var(--bg-dark), inset 0px 1px 0px var(--shadow-slide-but);
+  box-shadow: 0px 1px 0px var(--bg-dark),
+    inset 0px 1px 0px var(--shadow-slide-but);
   cursor: pointer;
 }
 
@@ -689,7 +690,8 @@ input[type="submit"] {
 
 .services__list-buttons button:hover {
   background: var(--bg-dark);
-  box-shadow: 0px 1px 0px var(--shadow-nav), inset 0px 1px 0px var(--shadow-slide-but);
+  box-shadow: 0px 1px 0px var(--shadow-nav),
+    inset 0px 1px 0px var(--shadow-slide-but);
   color: var(--text-white);
 }
 /* !----------------------------main-catalog--------------------------------- */
@@ -852,7 +854,27 @@ input[type="submit"] {
 .footer-footer__feedback a {
   color: var(--text-mark);
 }
+/** -------------------интерактив подвал--------------------------- */
+.footer-nav__item a:hover,
+.nav-promo-list__item a:hover,
+.footer-footer__feedback a:hover {
+  text-decoration: underline;
+}
 
+.socials__list a:hover {
+  background: var(--akcent-color);
+}
+
+.footer-nav__item a:active,
+.nav-promo-list__item a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.footer-footer__feedback a:active {
+  color: var(--akcent-color);
+  text-decoration: none;
+}
 /*! ----------------------модальные окна------------------------- */
 .modal {
   border-top: 7px solid var(--akcent-color);
