@@ -104,13 +104,19 @@
 }
 
 /* !----------------Глобальные стили----------------- */
-body {
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+.page-body {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: var(--text-black);
+  min-height: 100%;
 }
 
 /* *скрыть элемент */
