@@ -13,8 +13,8 @@
 </head>
 
 <body class="page-body">
-  <header class="header">
-    <div class="header-content-top paragraf-2">
+  <header class="header page-body__header">
+    <div class="header-content-top header__content-top paragraf-2">
       <div class="container">
         <a class="logo header-content-top__logo logo_active" href="#">
           <img class="img" src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
@@ -44,7 +44,7 @@
     </div>
 
     <!-- *середина шапки сайта -->
-    <div class="container header-content-middle">
+    <div class="container header-content-middle header__content-middle">
       <p class="header-content-middle__opisanie">
         <i>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</i>
       </p>
@@ -71,7 +71,7 @@
     </div>
 
     <!-- *навигация главная -->
-    <nav class="container main-navigation paragraf-2">
+    <nav class="container main-navigation header__main-navigation paragraf-2">
       <ul class="list main-navigation__list">
         <li class="main-navigation__item">
           <a class="link" href="blank.html">Главная</a>
@@ -104,7 +104,7 @@
     <h1 class="visuallyhidden">Интернет-магазин Техномарт</h1>
 
     <!--* промо ассортимент товаров -->
-    <section class="container promo-product">
+    <section class="container promo-product page-main__promo-product">
       <h2 class="visuallyhidden">Ассортимент предложений</h2>
 
       <div class="promo-product-card promo-product__card-material">
@@ -132,6 +132,7 @@
         <a class="link stok_button-text promo-product-card__link" href="blank.html">Бесплатно</a>
       </div>
 
+
       <!-- *слайдер -->
       <ul class="list carousel promo-product__carousel">
         <li class="carousel__item carousel__item-perforator">
@@ -143,7 +144,7 @@
           <a class="link stok_button-text carousel__link button-defolt-interactiv" href="catalog.html">ОТКРЫТЬ
             КАТАЛОГ</a>
         </li>
-        <li class="carousel__item carousel__item-drill">
+        <li class="carousel__item carousel__item-drill" style="display: none;">
           <div class="carousel__header">
             <h3 class="carousel__title"><strong>Дрели</strong></h3>
             <p class="carousel__text paragraf-2">Соседям на радость!</p>
@@ -158,7 +159,7 @@
 
     <!--* популярные товары -->
     <section class="container popular-goods">
-      <div class="section-header">
+      <div class="section-header popular-goods__section-header">
         <h2 class="section-header__title zagolovok-2">Популярные товары</h2>
         <a class="link stok_button-text section-header__link button-defolt-interactiv" href="blank.html">все популярные
           товары</a>
@@ -168,7 +169,7 @@
         <!-- карточки товаров -->
         <li class="popular-goods__item">
           <article class="goods-card popular-goods__card">
-            <div>
+            <div class="goods-card__div-image">
               <img class="img goods-card__img" src="/img/content/img-bfg9000.jpg" alt="Перфоратор BOSCH BFG 9000"
                 width="184" height="164">
             </div>
@@ -188,8 +189,10 @@
 
         <li class="popular-goods__item">
           <article class="goods-card popular-goods__card">
-            <img class="img goods-card__img" src="/img/content/img-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000"
-              width="127" height="112">
+            <div class="goods-card__div-image">
+              <img class="img goods-card__img" src="/img/content/img-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000"
+                width="127" height="112">
+            </div>
             <h3 class="goods-card__title bold-paragraf "><strong>Перфоратор BOSCH<br>BFG 3000</strong></h3>
             <p class="goods-card__old-value"><s class="old-price">22500 Р.</s></p>
             <button class="goods-card__button" type="button">15500 Р.</button>
@@ -206,8 +209,10 @@
 
         <li class="popular-goods__item">
           <article class="goods-card popular-goods__card">
-            <img class="img goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
-              width="144" height="128">
+            <div class="goods-card__div-image">
+              <img class="img goods-card__img" src="/img/content/img-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000"
+                width="144" height="128">
+            </div>
             <h3 class="goods-card__title bold-paragraf "><strong>Перфоратор BOSCH<br>BFG 6000</strong></h3>
             <p class="goods-card__old-value"><s class="old-price">30500 Р.</s></p>
             <button class="goods-card__button" type="button">25500 Р.</button>
@@ -224,8 +229,10 @@
 
         <li class="popular-goods__item">
           <article class="goods-card popular-goods__card">
-            <img class="img goods-card__img" src="/img/content/img-bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000"
-              width="127" height="112">
+            <div class="goods-card__div-image">
+              <img class="img goods-card__img" src="/img/content/img-bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000"
+                width="127" height="112">
+            </div>
             <h3 class="goods-card__title bold-paragraf "><strong>Перфоратор BOSCH<br>BFG 2000</strong></h3>
             <p class="goods-card__old-value"><s class="old-price">22500 Р.</s></p>
             <button class="goods-card__button" type="button">12500 Р.</button>
@@ -244,7 +251,7 @@
 
     <!--* популярные производители -->
     <section class="container popular-manufacturers">
-      <div class="section-header">
+      <div class="section-header popular-manufacturers__section-header">
         <h2 class="section-header__title zagolovok-2">Популярные производители</h2>
         <a class="link stok_button-text section-header__link button-defolt-interactiv" href="blank.html">все
           производители</a>
@@ -353,6 +360,7 @@
             <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Залезть в долговую яму стало
                 проще!<br></em>Кредитные консультанты
               придут вам на помощь.</p>
+            <a class="link stok_button-text about-us__link button-defolt-interactiv" href="#">Отправить заявку</a>
           </li>
 
         </ul>
@@ -494,6 +502,8 @@
 
   </footer>
 
+
+  <!--! модальные окна пока скрыли -->
   <section class="modal feedback">
     <h2 class="visuallyhidden">Обратная связь</h2>
     <form class="form-feedback feedback__form-feedback" action="#" method="post">

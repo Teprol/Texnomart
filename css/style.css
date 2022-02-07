@@ -117,6 +117,9 @@
   line-height: 24px;
   color: var(--text-black);
   min-height: 100%;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 /* *скрыть элемент */
@@ -157,6 +160,10 @@
   width: 940px;
   margin: auto auto;
   box-sizing: border-box;
+}
+
+.section-header__title {
+  margin: 0;
 }
 /** интерактив сток кнопки */
 .button-defolt-interactiv:hover,
@@ -364,14 +371,24 @@ input[type="submit"] {
 }
 
 /*! ---------------------------шапка сайта-------------------------------- */
+.page-body__header {
+  margin-bottom: 59px;
+}
+
 .header {
   background: var(--text-footer-mid);
   box-sizing: border-box;
 }
-
 .header-content-top {
   background: var(--bg-dark);
   box-sizing: border-box;
+}
+.header__content-top {
+  margin-bottom: 46px;
+}
+
+.header__content-middle {
+  margin-bottom: 45px;
 }
 
 .logo {
@@ -435,10 +452,26 @@ input[type="submit"] {
   color: var(--text-dark);
 }
 
+.header__main-navigation {
+  margin-bottom: 60px;
+}
+
 .main-navigation__list,
 .main-navigation__item .link {
   background: var(--text-dark);
   color: var(--text-white);
+}
+
+.form-search__content {
+  margin: 0;
+}
+
+.header-content-middle__opisanie {
+  margin: 0;
+}
+
+.header-content-middle__adress {
+  margin: 0;
 }
 /* !------------------------------шапка каталога----------------------------*/
 .user-login__container a:nth-of-type(1) {
@@ -531,6 +564,30 @@ input[type="submit"] {
   background: var(--bg-click-menu-dark);
 }
 /* !----------------------промо ассортимент товаров-------------------------- */
+.promo-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+.page-main__promo-product {
+  margin-bottom: 59px;
+}
+
+.promo-product-card h3 {
+  margin: 0;
+  margin-bottom: 14px;
+}
+.promo-product-card {
+  box-sizing: border-box;
+  padding: 20px 31px 0 23px;
+  height: 123px;
+}
+.promo-product__carousel {
+  grid-row: 2/ 4;
+  grid-column: 1 / 3;
+}
+
 .promo-product-card__link {
   background: var(--text-white-30);
   color: var(--text-white);
@@ -571,6 +628,10 @@ input[type="submit"] {
 }
 
 /*! --------------------карусель в промо-------------------- */
+.carousel__item {
+  box-sizing: border-box;
+  height: 266px;
+}
 .carousel__item-drill {
   background: var(--grey) url(/img/fons/carusel_dreli.jpg) no-repeat;
 }
@@ -592,16 +653,49 @@ input[type="submit"] {
   align-items: center;
   text-transform: uppercase;
 }
-
+.carousel__item h3,
+.carousel__item p {
+  margin: 0;
+}
 /* !-----------------------------main------------------------------------ */
 /* !--------------------------популярные товары--------------------------------------- */
 .section-header {
   background: var(--bg-title);
 }
 
+.popular-goods__section-header {
+  margin-bottom: 20px;
+}
+
+.popular-goods__list {
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .goods-card {
   box-sizing: border-box;
   border: solid 1px var(--border);
+  width: 220px;
+  height: 318px;
+}
+
+.goods-card__div-image {
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  height: 164px;
+}
+
+.goods-card__title {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.goods-card__old-value {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 13px;
 }
 
 .goods-card > button {
@@ -660,6 +754,13 @@ input[type="submit"] {
   opacity: 0.5;
 }
 /* !-------------------------------популярные производители--------------------------------------------- */
+.popular-manufacturers__list {
+  margin-bottom: 70px;
+}
+
+.popular-manufacturers__section-header {
+  margin-bottom: 20px;
+}
 
 .popular-manufacturers__item {
   box-sizing: border-box;
@@ -674,6 +775,7 @@ input[type="submit"] {
 /* !-------------------------------сервисы------------------------------- */
 .services {
   background: var(--text-footer-mid);
+  padding-top: 64px;
 }
 
 .services__list-buttons button {
@@ -692,6 +794,26 @@ input[type="submit"] {
   background: var(--text-white);
   color: var(--text-dark);
   box-shadow: 0px 1px 0px var(--text-white);
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.services__text {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.services__carousel-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.services__carousel-text {
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 .services__list-buttons button:hover {
@@ -831,6 +953,7 @@ input[type="submit"] {
 /* !--------------------------подвал---------------------- */
 .page-footer {
   background: var(--text-dark);
+  grid-row: -1 / -2;
 }
 
 .page-footer * {
@@ -889,6 +1012,7 @@ input[type="submit"] {
   margin: 0;
   padding: 0;
   box-shadow: 0 4px 20px var(--shadow-kart-modal);
+  display: none;
 }
 
 .form-submit,
