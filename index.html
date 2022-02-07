@@ -158,7 +158,7 @@
 
 
     <!--* популярные товары -->
-    <section class="container popular-goods">
+    <section class="container popular-goods page-main__popular-goods">
       <div class="section-header popular-goods__section-header">
         <h2 class="section-header__title zagolovok-2">Популярные товары</h2>
         <a class="link stok_button-text section-header__link button-defolt-interactiv" href="blank.html">все популярные
@@ -250,7 +250,7 @@
     </section>
 
     <!--* популярные производители -->
-    <section class="container popular-manufacturers">
+    <section class="container popular-manufacturers page-main__popular-manufacturers">
       <div class="section-header popular-manufacturers__section-header">
         <h2 class="section-header__title zagolovok-2">Популярные производители</h2>
         <a class="link stok_button-text section-header__link button-defolt-interactiv" href="blank.html">все
@@ -318,7 +318,7 @@
     </section>
 
     <!--* сервисы -->
-    <section class="services">
+    <section class="services page-main__services">
       <div class="container">
         <div class="services__header">
           <h2 class="services__title zagolovok-2">Сервисы</h2>
@@ -327,49 +327,51 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
-        <div class="services__list-buttons zagolovok-4">
-          <button class="services__list-buttons_active" type="button">Доставка</button>
-          <button type="button">Гарантия</button>
-          <button type="button">Кредит</button>
+        <div class="services__container">
+          <div class="services__list-buttons zagolovok-4">
+            <button class="services__list-buttons_active" type="button">Доставка</button>
+            <button type="button">Гарантия</button>
+            <button type="button">Кредит</button>
+          </div>
+          <!--* слайдер -->
+          <ul class="list services__carousel">
+
+            <li class="services__carousel-item">
+              <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Доставка</strong></h3>
+              <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Мы с удовольствием доставим ваш товар
+                  прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!</em></p>
+            </li>
+
+            <li class="services__carousel-item">
+              <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Гарантия</strong></h3>
+              <p class="services__carousel-text paragraf-1">Если купленный у нас товар поломается или заискрит,<br>а
+                также
+                в
+                случае
+                пожара, спровоцированного его<br>
+                возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
+                новый.<br>Дом уж восстановите как-нибудь сами.</p>
+            </li>
+
+            <li class="services__carousel-item">
+              <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Кредит</strong></h3>
+              <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Залезть в долговую яму стало
+                  проще!<br></em>Кредитные консультанты
+                придут вам на помощь.</p>
+              <a class="link stok_button-text about-us__link button-defolt-interactiv" href="#">Отправить заявку</a>
+            </li>
+
+          </ul>
         </div>
 
-        <!--* слайдер -->
-        <ul class="list services__carousel">
-
-          <li class="services__carousel-item">
-            <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Доставка</strong></h3>
-            <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Мы с удовольствием доставим ваш товар
-                прямо<br>
-                к вашему подъезду совершенно бесплатно!<br>
-                Ведь мы неплохо заработаем,<br>
-                поднимая его на ваш этаж!</em></p>
-          </li>
-
-          <li class="services__carousel-item">
-            <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Гарантия</strong></h3>
-            <p class="services__carousel-text paragraf-1">Если купленный у нас товар поломается или заискрит,<br>а также
-              в
-              случае
-              пожара, спровоцированного его<br>
-              возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
-              новый.<br>Дом уж восстановите как-нибудь сами.</p>
-          </li>
-
-          <li class="services__carousel-item">
-            <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Кредит</strong></h3>
-            <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Залезть в долговую яму стало
-                проще!<br></em>Кредитные консультанты
-              придут вам на помощь.</p>
-            <a class="link stok_button-text about-us__link button-defolt-interactiv" href="#">Отправить заявку</a>
-          </li>
-
-        </ul>
       </div>
     </section>
 
     <!--* контайнер с информацией о нас и контактами -->
-    <div class="info-kontakts">
-      <div class="container">
+    <div class="info-kontakts container">
         <section class="about-us">
           <h2 class="visuallyhidden">О нас</h2>
           <p class="about-us__title zagolovok-2">КОМПАНИЯ «<b class="zagolovok-2">Техномарт</b>»</p>
@@ -407,8 +409,6 @@
           <button class="stok_button-text contacts__link button-defolt-interactiv" type="button">Заблудились? Напишите
             нам!</button>
         </section>
-      </div>
-
     </div>
 
   </main>

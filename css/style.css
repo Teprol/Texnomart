@@ -452,8 +452,8 @@ input[type="submit"] {
   color: var(--text-dark);
 }
 
-.header__main-navigation {
-  margin-bottom: 60px;
+.main-navigation {
+  padding-bottom: 60px;
 }
 
 .main-navigation__list,
@@ -569,9 +569,7 @@ input[type="submit"] {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
-}
-.page-main__promo-product {
-  margin-bottom: 59px;
+  padding-bottom: 59px;
 }
 
 .promo-product-card h3 {
@@ -659,6 +657,10 @@ input[type="submit"] {
 }
 /* !-----------------------------main------------------------------------ */
 /* !--------------------------популярные товары--------------------------------------- */
+.page-main__popular-goods {
+  margin-bottom: 70px;
+}
+
 .section-header {
   background: var(--bg-title);
 }
@@ -668,7 +670,6 @@ input[type="submit"] {
 }
 
 .popular-goods__list {
-  margin-bottom: 70px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -754,8 +755,14 @@ input[type="submit"] {
   opacity: 0.5;
 }
 /* !-------------------------------популярные производители--------------------------------------------- */
-.popular-manufacturers__list {
+.page-main__popular-manufacturers {
   margin-bottom: 70px;
+}
+
+.popular-manufacturers__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .popular-manufacturers__section-header {
@@ -767,6 +774,8 @@ input[type="submit"] {
   margin: 0;
   padding: 0;
   border: 1px solid var(--border);
+  width: 220px;
+  height: 145px;
 }
 /* *---------интерактив производителя по клику------- */
 .popular-manufacturers__item:active {
@@ -776,6 +785,11 @@ input[type="submit"] {
 .services {
   background: var(--text-footer-mid);
   padding-top: 64px;
+  padding-bottom: 54px;
+}
+
+.page-main__services {
+  margin-bottom: 71px;
 }
 
 .services__list-buttons button {
@@ -816,12 +830,26 @@ input[type="submit"] {
   margin-bottom: 27px;
 }
 
+.services__container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 80px;
+}
+
 .services__list-buttons button:hover {
   background: var(--bg-dark);
   box-shadow: 0px 1px 0px var(--shadow-nav),
     inset 0px 1px 0px var(--shadow-slide-but);
   color: var(--text-white);
 }
+
+/* !----------------------контейнер с информ о нас--------------------------------- */
+.info-kontakts {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 180px;
+}
+
 /* !----------------------------main-catalog--------------------------------- */
 .section-header-catalog,
 .description-product {
