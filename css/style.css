@@ -147,6 +147,7 @@
 .img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .list {
@@ -702,6 +703,7 @@ input[type="submit"] {
 .goods-card > button {
   box-sizing: border-box;
   margin: 0;
+  margin-bottom: 21px;
   padding: 0;
   border: none;
   background: var(--akcent-color);
@@ -848,8 +850,44 @@ input[type="submit"] {
   display: grid;
   grid-template-columns: max-content max-content;
   gap: 180px;
+  padding-bottom: 70px;
 }
 
+.about-us__title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.about-us__text {
+  margin: 0;
+}
+
+.about-us .about-us__text:nth-of-type(2) {
+  margin-bottom: 21px;
+}
+
+.about-us__list h3 {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.about-us__item:last-of-type h3 {
+  margin-bottom: 20px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contacts__img {
+  margin-bottom: 25px;
+}
 /* !----------------------------main-catalog--------------------------------- */
 .section-header-catalog,
 .description-product {
@@ -984,6 +1022,14 @@ input[type="submit"] {
   grid-row: -1 / -2;
 }
 
+.page-footer__container {
+  padding-bottom: 54px;
+}
+
+.page-footer__header {
+  margin-bottom: 22px;
+}
+
 .page-footer * {
   color: var(--text-footer-mid);
 }
@@ -1010,6 +1056,18 @@ input[type="submit"] {
 
 .footer-footer__feedback a {
   color: var(--text-mark);
+}
+
+.footer-midle__address p{
+  margin: 0;
+}
+
+.footer-footer__copy {
+  margin: 0;
+}
+
+.page-footer__footer {
+  padding: 34px 0 29px 0;
 }
 /** -------------------интерактив подвал--------------------------- */
 .footer-nav__item a:hover,
