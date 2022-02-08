@@ -912,6 +912,18 @@ input[type="submit"] {
   margin-bottom: 25px;
 }
 /* !----------------------------main-catalog--------------------------------- */
+.page-main__grid-container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 20px;
+}
+
+.products-list__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .section-header-catalog,
 .description-product {
   background: var(--bg-gray);
@@ -1054,6 +1066,10 @@ input[type="submit"] {
 
 .sorting__arrows-button-active path {
   fill: #ee3643;
+}
+
+.sorting__title {
+  margin: 0;
 }
 
 /** ---------------интерактив сортировки--------------- */
