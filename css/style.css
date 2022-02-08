@@ -215,6 +215,10 @@ input[type="submit"] {
 .popular-manufacturers__item:hover {
   box-shadow: 0 4px 20px var(--shadow-kart-modal);
 }
+
+hr {
+  margin: 0;
+}
 /* !классы шрифтов */
 
 .paragraf-1 {
@@ -376,6 +380,10 @@ input[type="submit"] {
   margin-bottom: 59px;
 }
 
+.page-body__header_catalog {
+  margin-bottom: 21px;
+}
+
 .header {
   background: var(--text-footer-mid);
   box-sizing: border-box;
@@ -395,6 +403,7 @@ input[type="submit"] {
 .logo {
   background: var(--akcent-color);
   box-sizing: border-box;
+  display: block;
 }
 
 .form-search__search-input {
@@ -475,7 +484,21 @@ input[type="submit"] {
   margin: 0;
 }
 /* !------------------------------шапка каталога----------------------------*/
+.list-bookmarks__item_active {
+  background: var(--akcent-color);
+}
+
 .user-login__container a:nth-of-type(1) {
+  color: var(--text-black);
+}
+
+.user-login__name {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
   color: var(--text-black);
 }
 /* *--------------------------интерактивность шапки----------------------------------------- */
@@ -894,6 +917,19 @@ input[type="submit"] {
   background: var(--bg-gray);
 }
 
+.section-header-catalog__title {
+  margin: 0;
+}
+
+.section-header-catalog {
+  margin-bottom: 20px;
+}
+
+.filter__title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
 .filter__title,
 .form-cena input,
 .sorting {
@@ -961,6 +997,46 @@ input[type="submit"] {
   border: 4px solid var(--text-white);
   outline: 4px solid var(--border-dark);
   margin-right: 10px;
+}
+
+.form-filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form-cena__title {
+  margin-bottom: 11px;
+}
+
+.form-filter .form-filter__cena {
+  margin-bottom: 25px;
+}
+
+.form-filter .form-filter-line:nth-of-type(1),
+.form-manufacturers__list li,
+.nutrition__list li {
+  margin-bottom: 16px;
+}
+
+.form-filter .form-filter-line:nth-of-type(2) {
+  margin-bottom: 18px;
+}
+
+.form-manufacturers__title {
+  margin-bottom: 15px;
+}
+
+.form-manufacturers__list li:last-of-type {
+  margin-bottom: 26px;
+}
+
+.nutrition__title {
+  margin-bottom: 21px;
+}
+
+.nutrition__list li:last-of-type {
+  margin-bottom: 35px;
 }
 /*! ----------------------------сортировка------------------------------ */
 .sorting__button {
@@ -1058,7 +1134,7 @@ input[type="submit"] {
   color: var(--text-mark);
 }
 
-.footer-midle__address p{
+.footer-midle__address p {
   margin: 0;
 }
 

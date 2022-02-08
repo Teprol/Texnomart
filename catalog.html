@@ -13,8 +13,8 @@
 </head>
 
 <body class="page-body">
-  <header class="header">
-    <div class="header-content-top paragraf-2">
+  <header class="header page-body__header page-body__header_catalog">
+    <div class="header-content-top header__content-top paragraf-2">
       <div class="container">
         <a class="logo header-content-top__logo logo_active" href="index.html">
           <img class="img" src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
@@ -33,7 +33,7 @@
           <li class="list-bookmarks__item">
             <a class="link bookmarks-buttons bookmarks-button" href="blank.html"> Закладки: <span>0</span></a>
           </li>
-          <li class="list-bookmarks__item">
+          <li class="list-bookmarks__item list-bookmarks__item_active">
             <a class="link bookmarks-buttons cart-button" href="blank.html">Корзина: <span>10</span></a>
           </li>
           <li class="list-bookmarks__item">
@@ -44,7 +44,7 @@
     </div>
 
     <!-- *середина шапки сайта -->
-    <div class="container header-content-middle">
+    <div class="container header-content-middle header__content-middle">
       <p class="header-content-middle__opisanie">
         <i>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</i>
       </p>
@@ -65,7 +65,7 @@
                 d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 0 0 1.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83Z"
                 fill="#C5C5C5" />
             </svg>
-            Равшан Джамшутович
+            <span class="user-login__name">Равшан Джамшутович</span>
           </a>
           <a class="link" href="blank.html">
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +132,7 @@
         <p class="filter__title breadcrumbs">ФИЛЬТР:</p>
         <form class="form-filter" action="#" method="post">
 
-          <fieldset class="form-cena">
+          <fieldset class="form-cena form-filter__cena">
             <legend class="form-cena__title">ЦЕНА:</legend>
             <!--! другой дизайн нужен -->
             <input class="form-cena__range" type="range" step="1" min="1" max="30000">
@@ -147,7 +147,7 @@
               </li>
             </ul>
           </fieldset>
-
+          <hr class="form-filter-line">
           <fieldset class="form-manufacturers">
             <legend class="form-manufacturers__title">ПРОИЗВОДИТЕЛИ:</legend>
             <!-- *по производителям -->
@@ -174,7 +174,7 @@
               </li>
             </ul>
           </fieldset>
-
+          <hr class="form-filter-line">
           <fieldset class="nutrition">
             <legend class="nutrition__title">ПИТАНИЕ:</legend>
             <!--* питание -->
@@ -446,8 +446,9 @@
   <footer class="page-footer">
     <div class="container">
       <div class="footer-header page-footer__header paragraf-2">
-        <a class="logo footer-header__logo logo_active" href="#"><img src="/img/logo/logo-technomart.svg"
-            alt="Логотип Техномарт" width="138" height="23"></a>
+        <a class="logo footer-header__logo logo_active" href="#">
+          <img class="img" src="/img/logo/logo-technomart.svg" alt="Логотип Техномарт" width="138" height="23">
+        </a>
         <!--* дублируем навигацию -->
         <ul class="list footer-nav footer-header__list">
           <li class="footer-nav__item">
