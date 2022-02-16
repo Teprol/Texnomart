@@ -159,8 +159,8 @@
 
 .container {
   width: 940px;
-  margin: auto auto;
-  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .section-header__title {
@@ -396,6 +396,12 @@ input[type="submit"] {
   margin-bottom: 46px;
 }
 
+.header-content-top_wraper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
 .header__content-middle {
   margin-bottom: 45px;
 }
@@ -404,6 +410,13 @@ input[type="submit"] {
   background: var(--akcent-color);
   box-sizing: border-box;
   display: block;
+  width: 220px;
+  box-shadow: 0 5px 0 0 #ba2732;
+}
+
+.header-content-top__logo {
+  max-height: 42px;
+  padding: 12px 56px;
 }
 
 .form-search__search-input {
@@ -421,6 +434,10 @@ input[type="submit"] {
 }
 .form-search__search-input::placeholder {
   color: var(--text-white);
+}
+
+.list-bookmarks {
+  display: flex;
 }
 
 .bookmarks-buttons {
@@ -1183,6 +1200,10 @@ input[type="submit"] {
 
 .page-footer__footer {
   padding: 34px 0 29px 0;
+}
+
+.footer-header__logo {
+  padding: 20px 41px;
 }
 /** -------------------интерактив подвал--------------------------- */
 .footer-nav__item a:hover,
