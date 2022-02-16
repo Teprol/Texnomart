@@ -117,7 +117,7 @@
   line-height: 24px;
   color: var(--text-black);
   min-height: 100%;
-
+  min-width: 1200px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
@@ -607,7 +607,7 @@ input[type="submit"] {
 .promo-product-card {
   box-sizing: border-box;
   padding: 20px 31px 0 23px;
-  height: 123px;
+  min-height: 123px;
 }
 .promo-product__carousel {
   grid-row: 2/ 4;
@@ -656,7 +656,7 @@ input[type="submit"] {
 /*! --------------------карусель в промо-------------------- */
 .carousel__item {
   box-sizing: border-box;
-  height: 266px;
+  min-height: 266px;
 }
 .carousel__item-drill {
   background: var(--grey) url(/img/fons/carusel_dreli.jpg) no-repeat;
@@ -707,7 +707,7 @@ input[type="submit"] {
   box-sizing: border-box;
   border: solid 1px var(--border);
   width: 220px;
-  height: 318px;
+  min-height: 318px;
 }
 
 .goods-card__div-image {
