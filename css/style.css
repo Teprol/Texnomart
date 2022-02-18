@@ -166,7 +166,13 @@
 
 .section-header__title {
   margin: 0;
+  display: flex;
 }
+
+.section-header__title span {
+  margin: auto auto;
+}
+
 /** интерактив сток кнопки */
 .button-defolt-interactiv:hover,
 .goods-card__button:hover {
@@ -827,9 +833,15 @@ input[type="submit"] {
 .carousel__header {
   background: var(--bg-slider-title);
   color: var(--text-white);
+  padding: 23px 0 16px 24px;
 }
 
-.carousel__title {
+.carousel__item h3,
+.carousel__item p {
+  margin: 0;
+}
+
+.carousel__item .carousel__title {
   font-family: Cuprum;
   font-style: normal;
   font-weight: bold;
@@ -837,11 +849,9 @@ input[type="submit"] {
   line-height: 36px;
   align-items: center;
   text-transform: uppercase;
+  margin-bottom: 5px;
 }
-.carousel__item h3,
-.carousel__item p {
-  margin: 0;
-}
+
 /* !-----------------------------main------------------------------------ */
 /* !--------------------------популярные товары--------------------------------------- */
 .page-main__popular-goods {
@@ -850,6 +860,21 @@ input[type="submit"] {
 
 .section-header {
   background: var(--bg-title);
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-between;
+  padding: 25px 14px 26px 28px;
+}
+
+.section-header__link {
+  display: flex;
+  width: 192px;
+  padding: 11px 0 9px;
+}
+
+.section-header__link span {
+  margin: auto auto;
 }
 
 .popular-goods__section-header {
