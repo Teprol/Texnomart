@@ -58,7 +58,7 @@
 :root {
   --text-black: #000000;
   --text-white: #ffffff;
-  --text-white-opacity:  rgba(250, 250, 250, 0.5);
+  --text-white-opacity: rgba(250, 250, 250, 0.5);
   --text-white-30: rgba(250, 250, 250, 0.3);
   --text-footer-mid: #f1f5f7;
   --akcent-color: #ee3643;
@@ -403,14 +403,6 @@ input[type="submit"] {
   row-gap: 10px;
 }
 
-.header-content-middle {
-  display: flex;
-}
-
-.header__content-middle {
-  margin-bottom: 45px;
-}
-
 .logo {
   background: var(--akcent-color);
   box-sizing: border-box;
@@ -477,6 +469,23 @@ input[type="submit"] {
   background: var(--success);
 }
 
+.header-content-middle {
+  display: flex;
+  column-gap: 51px;
+}
+
+.header__content-middle {
+  margin-bottom: 40px;
+}
+
+.header-content-middle__contacts {
+  flex-basis: 270px;
+}
+
+.header-content-middle__contacts_right-margin18 {
+  margin-right: 18px;
+}
+
 .header-content-middle__opisanie * {
   color: var(--akcent-color);
   font-family: Cuprum;
@@ -491,6 +500,8 @@ input[type="submit"] {
   box-sizing: border-box;
   border: 3px solid var(--text-white);
   text-align: center;
+  padding: 4px 47px 5px 71px;
+  margin-bottom: 3px;
 }
 
 .header-content-middle__telefon .link {
@@ -510,6 +521,31 @@ input[type="submit"] {
   padding-bottom: 60px;
 }
 
+.main-navigation__list {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-navigation__item {
+  box-sizing: border-box;
+}
+
+.main-navigation__item a{
+  padding: 16px 28px 20px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.main-navigation__item:first-child a{
+  padding-left: 53px;
+}
+
+.main-navigation__item:last-child a{
+  padding-right: 53px;
+}
+
 .main-navigation__list,
 .main-navigation__item .link {
   background: var(--text-dark);
@@ -522,10 +558,83 @@ input[type="submit"] {
 
 .header-content-middle__opisanie {
   margin: 0;
+  margin-top: -2px;
+  margin-right: 42px;
+  padding-left: 30px;
+  max-width: 197px;
 }
 
 .header-content-middle__adress {
-  margin: 0;
+  min-width: 259px;
+  margin: 0 auto;
+}
+
+.user-login {
+  display: flex;
+  column-gap: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 282px;
+}
+
+.user-login-login {
+  width: 299px;
+}
+
+.user-login__container {
+  display: flex;
+  justify-content: space-between;
+  background: var(--text-white);
+  box-sizing: border-box;
+  padding: 12px 17px 8px 15px;
+  margin-bottom: 7px;
+}
+
+.user-login__container svg {
+  vertical-align: sub;
+}
+
+.user-login-login__svg-left {
+  margin-right: 19px;
+}
+
+.user-login__list-link {
+  display: flex;
+  justify-content: center;
+}
+
+.user-login__list-link .user-login__list-item:first-child {
+  margin-right: 33px;
+}
+
+.button-login {
+  min-width: 121px;
+  min-height: 45px;
+  padding: 12px 27px 12px 19px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  box-sizing: border-box;
+  flex: 1 1;
+}
+
+.button-login svg {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+.button-registration {
+  min-width: 150px;
+  min-height: 45px;
+  padding: 12px 24px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  box-sizing: border-box;
 }
 /* !------------------------------шапка каталога----------------------------*/
 .page-main__breadcrumbs-list {
@@ -662,6 +771,11 @@ input[type="submit"] {
 .promo-product-card__link {
   background: var(--text-white-30);
   color: var(--text-white);
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  min-width: 135px;
+  padding: 10px 0 10px;
 }
 
 .promo-product-card__title {
