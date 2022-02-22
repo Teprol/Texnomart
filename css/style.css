@@ -149,6 +149,7 @@
   max-width: 100%;
   height: auto;
   display: block;
+  margin: auto auto;
 }
 
 .list {
@@ -538,17 +539,17 @@ input[type="submit"] {
   box-sizing: border-box;
 }
 
-.main-navigation__item a{
+.main-navigation__item a {
   padding: 16px 28px 20px;
   box-sizing: border-box;
   display: block;
 }
 
-.main-navigation__item:first-child a{
+.main-navigation__item:first-child a {
   padding-left: 53px;
 }
 
-.main-navigation__item:last-child a{
+.main-navigation__item:last-child a {
   padding-right: 53px;
 }
 
@@ -892,12 +893,14 @@ input[type="submit"] {
   border: solid 1px var(--border);
   width: 220px;
   min-height: 318px;
+  padding: 6px 18px 21px;
 }
 
 .goods-card__div-image {
   box-sizing: border-box;
   margin-bottom: 8px;
   height: 164px;
+  display: flex;
 }
 
 .goods-card__title {
@@ -908,17 +911,22 @@ input[type="submit"] {
 .goods-card__old-value {
   text-align: center;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 }
 
-.goods-card > button {
+.goods-card__wrapper-button {
+  display: flex;
+  padding-left: 14px;
+}
+
+.goods-card__button {
   box-sizing: border-box;
-  margin: 0;
-  margin-bottom: 21px;
+  margin: auto auto;
+  /* margin: 0; */
+  /* margin-bottom: 21px; */
   padding: 0;
   border: none;
   background: var(--akcent-color);
-
   font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
@@ -927,6 +935,11 @@ input[type="submit"] {
   text-align: center;
   text-transform: uppercase;
   color: var(--text-white);
+  width: 141px;
+  padding: 10px 44px 10px 32px;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  /* срез у кнопок сделал через полигон, можно реализовать через before но было интересно попробовать, также более красивее, поддержка 97% для остальных кнопка прямоугольная, ну либо можно добавить бефор*/
 }
 
 .goods-card__item-list:nth-of-type(1) button {
