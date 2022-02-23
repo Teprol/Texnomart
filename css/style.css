@@ -1002,6 +1002,17 @@ input[type="submit"] {
   border: 1px solid var(--border);
   width: 220px;
   height: 145px;
+  padding-bottom: 5px;
+}
+
+.popular-manufacturers__item a {
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.popular-manufacturers__item img {
+  margin: auto auto;
 }
 /* *---------интерактив производителя по клику------- */
 .popular-manufacturers__item:active {
