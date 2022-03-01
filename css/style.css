@@ -1421,6 +1421,7 @@ li.about-us__item h3::before {
   display: flex;
   column-gap: 59px;
   padding-top: 5px;
+  flex-wrap: wrap;
 }
 
 .nav-promo-list * {
@@ -1430,6 +1431,7 @@ li.about-us__item h3::before {
 .footer-footer {
   background: var(--bg-dark);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-footer * {
@@ -1438,18 +1440,30 @@ li.about-us__item h3::before {
 
 .socials__list {
   display: flex;
+  column-gap: 4px;
+}
+
+/* .socials__list li {
+  margin-right: 4px;
+} */
+
+.socials__list li:last-child {
+  margin-right: 0;
 }
 
 .socials__list a {
   display: block;
-  width: 44px;
-  height: 44px;
+  width: 41px;
+  height: 40px;
   border-radius: 50%;
   background-color: var(--bg-icon-social);
 }
 
 .footer-footer__feedback {
   display: flex;
+  column-gap: 52px;
+  row-gap: 10px;
+  flex-wrap: wrap;
 }
 
 .footer-footer__feedback a {
@@ -1477,6 +1491,15 @@ li.about-us__item h3::before {
 .footer-header__logo {
   padding: 20px 41px;
 }
+
+.footer-footer__socials {
+  margin-right: 120px;
+}
+
+.footer-footer__feedback p {
+  margin: 0;
+}
+
 /** -------------------интерактив подвал--------------------------- */
 .footer-nav__item a:hover,
 .nav-promo-list__item a:hover,
