@@ -879,10 +879,6 @@ input[type="submit"] {
   padding: 0 27px 0 30px;
 }
 
-.carousel__radio {
-  display: flex;
-}
-
 .carousel__contols li {
   width: 25px;
   height: 24px;
@@ -897,8 +893,29 @@ input[type="submit"] {
   transform: rotate(220deg);
 }
 
+.carousel__radio {
+  display: flex;
+  position: absolute;
+  bottom: 26px;
+  left: 46%;
+  padding: 10px;
+  column-gap: 10px;
+}
+
 .carousel__radio li {
   cursor: pointer;
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: var(--text-white);
+  border-radius: 50%;
+  border: 2px solid var(--text-white);
+}
+
+/* модификатор который вешается активному радиобатому */
+.carousel__radio .carousel__radio-active {
+  background: var(--akcent-color);
 }
 
 /* !-----------------------------main------------------------------------ */
