@@ -770,6 +770,11 @@ input[type="submit"] {
   padding: 20px 31px 0 23px;
   min-height: 123px;
 }
+
+.carousel {
+  position: relative;
+}
+
 .promo-product__carousel {
   grid-row: 2/ 4;
   grid-column: 1 / 3;
@@ -835,6 +840,7 @@ input[type="submit"] {
   background: var(--bg-slider-title);
   color: var(--text-white);
   padding: 23px 0 16px 24px;
+  margin-bottom: 97px;
 }
 
 .carousel__item h3,
@@ -851,6 +857,48 @@ input[type="submit"] {
   align-items: center;
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+.carousel__bootom {
+  padding-left: 24px;
+}
+
+.carousel__link {
+  width: 192px;
+  display: flex;
+  padding: 11px 0 9px 0;
+  justify-content: center;
+}
+
+.carousel__contols {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 130px;
+  justify-content: space-between;
+  padding: 0 27px 0 30px;
+}
+
+.carousel__radio {
+  display: flex;
+}
+
+.carousel__contols li {
+  width: 25px;
+  height: 24px;
+  border: 3px solid white;
+  border-top: none;
+  border-right: none;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.carousel__contols li:last-child {
+  transform: rotate(220deg);
+}
+
+.carousel__radio li {
+  cursor: pointer;
 }
 
 /* !-----------------------------main------------------------------------ */
