@@ -320,15 +320,18 @@ input[type="submit"] {
   color: var(--grey-dark);
 }
 
-.breadcrumbs {
+.breadcrumbs-font {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-
   color: var(--text-black);
+}
+
+.breadcrumbs__item-home {
+  vertical-align: -1px;
 }
 
 .zagolovok-6 {
@@ -468,7 +471,7 @@ input[type="submit"] {
 }
 
 .cart-button {
-  padding-left: 49px;
+  padding-left: 47px;
 }
 
 .order-button {
@@ -597,9 +600,9 @@ input[type="submit"] {
   margin-bottom: 7px;
 }
 
-.user-login__container svg {
+/* .user-login__container svg {
   vertical-align: sub;
-}
+} */
 
 .user-login-login__svg-left {
   margin-right: 19px;
@@ -645,7 +648,7 @@ input[type="submit"] {
 }
 /* !------------------------------шапка каталога----------------------------*/
 .page-main__breadcrumbs-list {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .list-bookmarks__item_active {
@@ -1283,18 +1286,44 @@ li.about-us__item h3::before {
 }
 
 .section-header-catalog {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+  padding: 30px 0 30px 29px;
 }
 
 .filter__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+  padding: 10px 0 10px 18px;
 }
 
 .filter__title,
 .form-cena input,
 .sorting {
   background: var(--bg-title-catalog);
+}
+
+.sorting {
+  display: flex;
+  padding: 10px 0 10px 19px;
+  flex-wrap: wrap;
+}
+
+.page-main__sorting {
+  margin-bottom: 28px;
+}
+
+.sorting__list {
+  display: flex;
+  width: 354px;
+  justify-content: space-between;
+  margin-right: 46px;
+  flex-wrap: wrap;
+}
+
+.sorting__arrows-list {
+  display: flex;
+  width: 43px;
+  justify-content: space-between;
 }
 
 .sorting button {
@@ -1308,6 +1337,34 @@ li.about-us__item h3::before {
   border: 1px solid var(--bord-submit-filter);
   box-sizing: border-box;
 }
+
+/*! -------------------------Хлебные крошки-------------------------------------- */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 41px;
+}
+
+.breadcrumbs li {
+  position: relative;
+}
+
+.breadcrumbs li::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 12px;
+  position: absolute;
+  top: 3px;
+  right: -26px;
+  background: url(/img/icons/icon-right-small.svg) no-repeat;
+  background-size: contain;
+}
+
+.breadcrumbs li:last-child::before {
+  display: none;
+}
+
 /*! --------------------фильтр--------------------------- */
 .form-manufacturers__list input {
   display: none;
@@ -1366,6 +1423,47 @@ li.about-us__item h3::before {
   border: none;
 }
 
+.form-cena__range {
+  width: 220px;
+  background: #f7f3ec;
+  min-height: 80px;
+  padding: 0 20px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.form-cena__content {
+  margin: auto auto;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #63A63E 152px, #C5C5C5 152px);
+  position: relative;
+}
+
+.form-cena__content::before,
+.form-cena__content::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 8px solid white;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  box-shadow: 0 1px 0 #ABABAB;
+}
+
+.form-cena__content::before {
+  top: -10px;
+  left: -2px;
+}
+
+.form-cena__content::after {
+  top: -10px;
+  right: 20px;
+}
+
 .form-cena__title {
   margin-bottom: 11px;
 }
@@ -1419,6 +1517,7 @@ li.about-us__item h3::before {
 
 .sorting__title {
   margin: 0;
+  margin-right: 140px;
 }
 
 /** ---------------интерактив сортировки--------------- */
