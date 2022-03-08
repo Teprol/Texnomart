@@ -990,8 +990,6 @@ input[type="submit"] {
 .goods-card__button {
   box-sizing: border-box;
   margin: auto auto;
-  /* margin: 0; */
-  /* margin-bottom: 21px; */
   padding: 0;
   border: none;
   background: var(--akcent-color);
@@ -1070,7 +1068,6 @@ input[type="submit"] {
   border: 1px solid var(--border);
   width: 220px;
   height: 145px;
-  /* padding-bottom: 5px; */
 }
 
 .popular-manufacturers__item a {
@@ -1222,10 +1219,6 @@ li.about-us__item h3::before {
   vertical-align: middle;
   margin-right: 12px;
 }
-
-/* .about-us__item:last-of-type h3 {
-  margin-bottom: 20px;
-} */
 
 .about-us__item b {
   font-family: Cuprum;
@@ -1398,12 +1391,11 @@ li.about-us__item h3::before {
 
 .label-filter-manufacturers::after {
   content: "";
-  display: inline-block;
+  display: none;
   box-sizing: border-box;
   width: 21px;
   height: 12px;
   border: 4px solid var(--border-dark);
-  /* background: var(--text-white); */
   border-top: none;
   border-right: none;
   position: absolute;
@@ -1525,12 +1517,12 @@ li.about-us__item h3::before {
   border: none;
 }
 
-/* .form-filter-line {
-  height: 1px;
-  box-sizing: border-box;
-  border: none;
-  background: var(--grey-dark);
-} */
+/* *-------------------------------интерактив -фильтр----------------------------------------------- */
+.form-manufacturers__item input:checked ~ .label-filter-manufacturers::after {
+  display: inline-block;
+}
+/* отслеживает состояние чекбокса, при включеном нажатом отображает галочку, инчае галочки нет */
+
 /*! ----------------------------сортировка------------------------------ */
 .sorting__button {
   border-bottom: 1px dotted var(--akcent-color);
