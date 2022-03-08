@@ -100,6 +100,7 @@
   /* *-------------------рамки--------------------- */
   --border: #eaeaea;
   --border-dark: #c5c5c5;
+  --border-hover-dark: #b5b5b5;
   --bg-icon-social: #212a3a;
   --bord-submit-filter: #e5e5e5;
 }
@@ -1522,6 +1523,28 @@ li.about-us__item h3::before {
   display: inline-block;
 }
 /* отслеживает состояние чекбокса, при включеном нажатом отображает галочку, инчае галочки нет */
+
+.label-filter-manufacturers:hover::after,
+.label-filter-manufacturers:hover::before {
+  border-color: var(--border-hover-dark);
+}
+/* изминение цвета чекбокса при наведении */
+
+.nutrition__item input:checked ~ .label-filter-nutrition::before {
+  background: var(--border-dark);
+}
+/* закрашивание радиобатена при нажатии */
+
+.nutrition__item label.label-filter-nutrition:hover::before {
+  /* background: var(--border-hover-dark); */
+  outline-color: var(--border-hover-dark);
+}
+/* закрашивание обводки радиобатена при наведении в более темный цвет */
+
+.nutrition__item input:checked ~ .label-filter-nutrition:hover::before {
+  background: var(--border-hover-dark);
+}
+/* закрашивание фона радио батена при наведении в более темный цвет */
 
 /*! ----------------------------сортировка------------------------------ */
 .sorting__button {
