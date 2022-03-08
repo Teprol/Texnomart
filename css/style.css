@@ -279,7 +279,7 @@ input[type="submit"] {
   font-family: Cuprum;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   background: var(--akcent-color);
@@ -1272,7 +1272,7 @@ li.about-us__item h3::before {
 .products-list__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 17px 20px;
   margin-bottom: 48px;
 }
 
@@ -1336,6 +1336,9 @@ li.about-us__item h3::before {
   font-family: "PT Sans";
   border: 1px solid var(--bord-submit-filter);
   box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 38px;
 }
 
 /*! -------------------------Хлебные крошки-------------------------------------- */
@@ -1372,6 +1375,10 @@ li.about-us__item h3::before {
 
 .nutrition__list input {
   display: none;
+}
+
+.nutrition__item {
+  margin-bottom: 16px;
 }
 
 .label-filter-manufacturers {
@@ -1414,7 +1421,9 @@ li.about-us__item h3::before {
   vertical-align: middle;
   border: 4px solid var(--text-white);
   outline: 4px solid var(--border-dark);
-  margin-right: 10px;
+  margin-right: 18px;
+  position: relative;
+  left: 4px;
 }
 
 .form-filter fieldset {
@@ -1450,9 +1459,10 @@ li.about-us__item h3::before {
   border: 8px solid white;
   box-sizing: border-box;
   border-radius: 50%;
-  background: red;
+  background: #ababab;
   position: absolute;
   box-shadow: 0 1px 0 #ababab;
+  cursor: pointer;
 }
 
 .form-cena__content::before {
@@ -1474,8 +1484,7 @@ li.about-us__item h3::before {
 }
 
 .form-filter .form-filter-line:nth-of-type(1),
-.form-manufacturers__list li,
-.nutrition__list li {
+.form-manufacturers__list li {
   margin-bottom: 14px;
 }
 
@@ -1496,7 +1505,7 @@ li.about-us__item h3::before {
 }
 
 .nutrition__list li:last-of-type {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 
 .form-cena__list {
@@ -1579,13 +1588,35 @@ li.about-us__item h3::before {
 /* !-------------------погинация--------------------------- */
 .pagination__list {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 59px;
 }
 
-.pagination__item a {
+.pagination__item {
+  min-width: 38px;
+  min-height: 38px;
+}
+
+.pagination__item_next {
+  min-width: 140px;
+}
+
+.pagination__item-link {
   border: 1px solid var(--bord-submit-filter);
   border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
 }
 
+.pagination__item-link span {
+  margin: auto auto;
+}
 /* *---------------интерактив погинация----------------- */
 .pagination__item a:hover {
   border: 2px solid var(--border-dark);
@@ -1598,6 +1629,7 @@ li.about-us__item h3::before {
 .pagination__item-active {
   background: var(--akcent-color);
   border: none;
+  color: var(--text-white);
 }
 /* !--------------------------подвал---------------------- */
 .page-footer {
@@ -1606,7 +1638,7 @@ li.about-us__item h3::before {
 }
 
 .page-footer__container {
-  padding-bottom: 54px;
+  margin-bottom: 54px;
 }
 
 .footer-header {
