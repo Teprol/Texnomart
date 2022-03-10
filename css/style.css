@@ -200,25 +200,6 @@ input[type="submit"] {
   margin: 0;
   box-sizing: border-box;
 }
-
-/* наклейка новое */
-.new::before {
-  content: "new";
-  display: block;
-  box-sizing: border-box;
-  width: 100px;
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--text-white);
-  background: var(--akcent-color);
-  transform: rotate(45deg);
-}
-
 /* тени при наведении */
 .goods-card:hover,
 .popular-manufacturers__item:hover {
@@ -280,7 +261,7 @@ input[type="submit"] {
   font-family: Cuprum;
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   background: var(--akcent-color);
@@ -963,6 +944,31 @@ input[type="submit"] {
   width: 220px;
   min-height: 318px;
   padding: 6px 18px 21px;
+  position: relative;
+  overflow: hidden;
+}
+
+.new::before {
+  content: "NEW";
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  background: red;
+  text-align: center;
+  top: 9px;
+  right: -26px;
+  transform: rotate(45deg);
+  padding: 5px 0 6px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-white);
+  background: var(--akcent-color);
+  transform: rotate(45deg);
 }
 
 .goods-card__div-image {
@@ -981,6 +987,7 @@ input[type="submit"] {
   text-align: center;
   margin: 0;
   margin-bottom: 8px;
+  min-height: 24px;
 }
 
 .goods-card__wrapper-button {
@@ -1009,10 +1016,24 @@ input[type="submit"] {
   /* срез у кнопок сделал через полигон, можно реализовать через before но было интересно попробовать, также более красивее, поддержка 97% для остальных кнопка прямоугольная, ну либо можно добавить бефор*/
 }
 
+
+.goods-card__list-button {
+  padding: 32px 22px 0;
+}
+
+.goods-card__item-list button {
+  min-width: 135px;
+  display: block;
+}
+
+.goods-card__list-button .goods-card__item-list {
+  margin-bottom: 10px;
+}
+
 .goods-card__item-list:nth-of-type(1) button {
   box-sizing: border-box;
   border: none;
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
   background: var(--success);
   border-radius: 2px;
@@ -1022,11 +1043,12 @@ input[type="submit"] {
 .goods-card__item-list:nth-of-type(2) button {
   box-sizing: border-box;
   border: 3px solid var(--success);
-  padding: 0;
+  padding: 6px 0;
   margin: 0;
   background: var(--text-white);
   color: var(--text-dark);
   border-radius: 2px;
+  box-sizing: border-box;
 }
 
 /** -------------------интерактив стили для популяр товар-------------------- */
@@ -1047,6 +1069,7 @@ input[type="submit"] {
   border: 3px solid var(--text-dark);
   opacity: 0.5;
 }
+
 /* !-------------------------------популярные производители--------------------------------------------- */
 .page-main__popular-manufacturers {
   margin-bottom: 70px;
