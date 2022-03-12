@@ -428,6 +428,7 @@ input[type="submit"] {
   padding-left: 42px;
   width: 100%;
 }
+
 .form-search__search-input::placeholder {
   color: var(--text-white);
 }
@@ -450,10 +451,44 @@ input[type="submit"] {
 
 .bookmarks-button {
   padding-left: 43px;
+  position: relative;
+}
+
+.bookmarks-button::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  width: 14px;
+  height: 16px;
+  background: url(/img/icons/icon-bookmark.svg);
+  opacity: 0.5;
+}
+
+.bookmarks-button:hover::before {
+  opacity: 1;
 }
 
 .cart-button {
-  padding-left: 47px;
+  padding-left: 48px;
+  position: relative;
+}
+
+.cart-button::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 4px;
+  left: 26px;
+  background: url(/img/icons/icon-cart.svg);
+  opacity: 0.5;
+}
+
+.cart-button:hover::before {
+  opacity: 1;
 }
 
 .order-button {
@@ -498,6 +533,18 @@ input[type="submit"] {
 
 .header-content-middle__telefon .link {
   color: var(--akcent-color);
+  position: relative;
+}
+
+.header-content-middle__telefon .link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background: url(/img/icons/icon-phone.svg);
+  top: 3px;
+  left: -34px;
 }
 
 .header-content-middle__user-login .link {
@@ -518,6 +565,7 @@ input[type="submit"] {
   box-sizing: border-box;
   justify-content: space-between;
   flex-wrap: wrap;
+  box-shadow: inset 0px -5px 0px var(--shadow-nav);
 }
 
 .main-navigation__item {
@@ -542,15 +590,47 @@ input[type="submit"] {
 .main-navigation__item .link {
   background: var(--text-dark);
   color: var(--text-white);
+  box-shadow: inset 0px -5px 0px var(--shadow-nav);
 }
 
 .form-search__content {
   margin: 0;
+  position: relative;
+}
+
+.form-search__content::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: url(/img/icons/icon-search.svg);
+  top: 12px;
+  left: 17px;
+}
+
+.form-search__content::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: url(/img/icons/icon-search.svg);
+  top: 12px;
+  left: 17px;
+}
+
+.form-search__content:hover::before {
+  background: url(/img/icons/icon-search-white.svg);
+}
+
+.form-search__content:focus-within::before {
+  background: url(/img/icons/icon-search-red.svg);
 }
 
 .header-content-middle__opisanie {
   margin: 0;
-  margin-top: -2px;
+  margin-top: -3px;
   margin-right: 42px;
   padding-left: 30px;
   max-width: 197px;
@@ -692,7 +772,6 @@ input[type="submit"] {
 /* фокус в поле поиска */
 .form-search__search-input:focus::placeholder {
   color: var(--text-black);
-
   font-family: Cuprum;
   font-style: normal;
   font-weight: normal;
@@ -754,6 +833,8 @@ input[type="submit"] {
   box-sizing: border-box;
   padding: 20px 31px 0 23px;
   min-height: 123px;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel {
@@ -781,22 +862,82 @@ input[type="submit"] {
 
 .promo-product__card-material {
   background: var(--bg-promo-materials);
+  position: relative;
+}
+
+.promo-product__card-material::after {
+  content: "";
+  display: inline-block;
+  width: 44px;
+  height: 65px;
+  position: absolute;
+  top: 31px;
+  right: 43px;
+  background: url(/img/icons/icon-bank_kraski.svg);
 }
 
 .promo-product__card-instrument {
   background: var(--bg-promo-instrument);
+  position: relative;
+}
+
+.promo-product__card-instrument::after {
+  content: "";
+  display: inline-block;
+  width: 75px;
+  height: 61px;
+  position: absolute;
+  top: 34px;
+  right: 31px;
+  background: url(/img/icons/icon-shurupovert.svg);
 }
 
 .promo-product__card-technics {
   background: var(--bg-promo-tehnik);
+  position: relative;
+}
+
+.promo-product__card-technics::after {
+  content: "";
+  display: inline-block;
+  width: 78px;
+  height: 62px;
+  position: absolute;
+  top: 31px;
+  right: 31px;
+  background: url(/img/icons/icon-traktor.svg);
 }
 
 .promo-product__card-sale {
   background: var(--bg-promo-sale);
+  position: relative;
+}
+
+.promo-product__card-sale::after {
+  content: "";
+  display: inline-block;
+  width: 59px;
+  height: 72px;
+  position: absolute;
+  top: 26px;
+  right: 45px;
+  background: url(/img/icons/icon-karzina.svg);
 }
 
 .promo-product__card-deliveri {
   background: var(--bg-promo-deliveri);
+  position: relative;
+}
+
+.promo-product__card-deliveri::after {
+  content: "";
+  display: inline-block;
+  width: 78px;
+  height: 63px;
+  position: absolute;
+  top: 32px;
+  right: 31px;
+  background: url(/img/icons/icon-car.svg);
 }
 /** --------------------------интерактив промо--------------------------------- */
 /* наведение на кнопку  */
@@ -943,7 +1084,7 @@ input[type="submit"] {
   border: solid 1px var(--border);
   width: 220px;
   min-height: 318px;
-  padding: 6px 18px 21px;
+  padding: 6px 18px 20px;
   position: relative;
   overflow: hidden;
 }
@@ -1016,7 +1157,6 @@ input[type="submit"] {
   /* срез у кнопок сделал через полигон, можно реализовать через before но было интересно попробовать, также более красивее, поддержка 97% для остальных кнопка прямоугольная, ну либо можно добавить бефор*/
 }
 
-
 .goods-card__list-button {
   padding: 32px 22px 0;
 }
@@ -1072,7 +1212,7 @@ input[type="submit"] {
 
 /* !-------------------------------популярные производители--------------------------------------------- */
 .page-main__popular-manufacturers {
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
 
 .popular-manufacturers__list {
@@ -1110,8 +1250,9 @@ input[type="submit"] {
 /* !-------------------------------сервисы------------------------------- */
 .services {
   background: var(--text-footer-mid);
-  padding-top: 64px;
-  padding-bottom: 102px;
+  padding-top: 65px;
+  /* padding-bottom: 98px; */
+  padding-bottom: 81px;
 }
 
 .page-main__services {
@@ -1120,6 +1261,7 @@ input[type="submit"] {
 
 .services__list-buttons {
   position: relative;
+  padding-top: 2px;
 }
 
 .services__list-buttons::before {
@@ -1149,6 +1291,7 @@ input[type="submit"] {
   align-items: center;
   justify-content: flex-start;
   padding-left: 22px;
+  margin-bottom: 1px;
 }
 
 .services__list-buttons .services__list-buttons_active {
@@ -1165,6 +1308,51 @@ input[type="submit"] {
 .services__text {
   margin: 0;
   margin-bottom: 70px;
+}
+
+.services__carousel-item {
+  position: relative;
+}
+
+.services__carousel-dostavka {
+  margin-bottom: 51px;
+}
+
+.services__carousel-dostavka::before {
+  content: "";
+  display: inline-block;
+  width: 468px;
+  height: 261px;
+  position: absolute;
+  top: 20px;
+  right: 1px;
+  background: url(/img/icons/icon-dostavka.png);
+}
+
+.services__carousel-garant::before {
+  content: "";
+  display: inline-block;
+  width: 468px;
+  height: 261px;
+  position: absolute;
+  top: -2px;
+  right: -87px;
+  background: url(/img/icons/icon-medalka.png);
+}
+
+.services__carousel-kredit {
+  margin-bottom: 34px;
+}
+
+.services__carousel-kredit::before {
+  content: "";
+  display: inline-block;
+  width: 468px;
+  height: 261px;
+  position: absolute;
+  top: -8px;
+  right: -13px;
+  background: url(/img/icons/icon-kredit.png);
 }
 
 .services__carousel-title {
@@ -1215,7 +1403,7 @@ input[type="submit"] {
 
 .about-us__text {
   margin: 0;
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 }
 
 .about-us .about-us__text:nth-of-type(2) {
@@ -1223,7 +1411,7 @@ input[type="submit"] {
 }
 
 .about-us__list {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .about-us__list h3 {
@@ -1231,7 +1419,7 @@ input[type="submit"] {
 }
 
 .about-us__list .about-us__item {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 li.about-us__item h3::before {
@@ -1261,12 +1449,12 @@ li.about-us__item h3::before {
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .contacts__text {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 .contacts__img {
@@ -1289,7 +1477,7 @@ li.about-us__item h3::before {
 .products-list__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 17px 20px;
+  gap: 18px 20px;
   margin-bottom: 48px;
 }
 
@@ -1356,6 +1544,7 @@ li.about-us__item h3::before {
   display: block;
   width: 100%;
   min-height: 38px;
+  font-size: 13px;
 }
 
 /*! -------------------------Хлебные крошки-------------------------------------- */
@@ -1517,7 +1706,7 @@ li.about-us__item h3::before {
 }
 
 .nutrition__title {
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 }
 
 .nutrition__list li:last-of-type {
@@ -1676,7 +1865,7 @@ li.about-us__item h3::before {
 }
 
 .page-footer__container {
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 
 .footer-header {
@@ -1774,7 +1963,7 @@ li.about-us__item h3::before {
 }
 
 .page-footer__footer {
-  padding: 37px 0 29px 0;
+  padding: 35px 0 32px 0;
 }
 
 .footer-header__logo {
