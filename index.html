@@ -387,7 +387,7 @@
           </div>
           <!--* слайдер -->
           <ul class="list services__carousel">
-            <li class="services__carousel-item services__carousel-dostavka visuallyhidden">
+            <li class="services__carousel-item services__carousel-dostavka">
               <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Доставка</strong></h3>
               <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Мы с удовольствием доставим ваш товар
                   прямо<br>
@@ -407,7 +407,7 @@
                 новый.<br>Дом уж восстановите как-нибудь сами.</p>
             </li>
 
-            <li class="services__carousel-item services__carousel-kredit">
+            <li class="services__carousel-item services__carousel-kredit visuallyhidden">
               <h3 class="services__carousel-title zagolovok-2"><strong class="zagolovok-2">Кредит</strong></h3>
               <p class="services__carousel-text paragraf-1"><em class="paragraf-1">Залезть в долговую яму стало
                   проще!<br></em>Кредитные консультанты
@@ -558,41 +558,43 @@
 
 
   <!--! модальные окна пока скрыли -->
-  <section class="modal feedback">
+  <section class="modal feedback visuallyhidden">
     <h2 class="visuallyhidden">Обратная связь</h2>
-    <form class="form-feedback feedback__form-feedback" action="#" method="post">
+    <div class="feedback__wrapper">
+      <form class="form-feedback feedback__form-feedback" action="#" method="post">
+        <div class="feedback__top">
+          <div class="form-login feedback__form-login">
+            <p>
+              <label class="paragraf-2" for="Avtorization_name">Ваше имя:</label>
+              <input class="paragraf-1" id="Avtorization_name" name="имя" placeholder="Имя Фамилия" type="text">
+            </p>
+          </div>
 
-      <div class="form-login feedback__form-login">
-        <p>
-          <label class="paragraf-2" for="Avtorization_name">Ваше имя:</label>
-          <input class="paragraf-1" id="Avtorization_name" name="имя" placeholder="Имя Фамилия" type="text">
-        </p>
-      </div>
+          <div class="form-email feedback__form-email">
+            <p>
+              <label class="paragraf-2" for="Avtorization_mail">Ваш e-mail:</label>
+              <input class="paragraf-1" id="Avtorization_mail" name="почта" placeholder="email@example.com"
+                type="email">
+            </p>
+          </div>
+        </div>
 
-      <div class="form-email feedback__form-email">
-        <p>
-          <label class="paragraf-2" for="Avtorization_mail">Ваш e-mail:</label>
-          <input class="paragraf-1" id="Avtorization_mail" name="почта" placeholder="email@example.com" type="email">
-        </p>
-      </div>
-
-      <div class="form-user-text feedback__form-user-text">
-        <p><label class="paragraf-2" for="Avtorization_text">Текст письма</label></p>
-        <textarea name="текст" class="paragraf-1" id="Avtorization_text" cols="30" rows="10"
-          placeholder="В свободной форме"></textarea>
-      </div>
-
-      <div class="form-submit feedback__form-submit">
-        <input type="submit">
-      </div>
-    </form>
+        <div class="form-user-text feedback__form-user-text">
+          <p><label class="paragraf-2" for="Avtorization_text">Текст письма:</label></p>
+          <textarea name="текст" class="paragraf-1" id="Avtorization_text" cols="60" rows="4"
+            placeholder="В свободной форме"></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="form-submit feedback__form-submit">
+      <input type="submit">
+    </div>
     <button class="close feedback__close" type="button" aria-label="Закрыть"></button>
-
   </section>
 
-  <section class="modal map">
+  <section class="modal map visuallyhidden">
     <h2 class="visuallyhidden">Как нас найти</h2>
-    <img class="img map__img" src="/img/content/img-card_big.png" alt="Логотип Техномарт" width="943" height="449">
+    <img class="img map__img" src="/img/content/img-card_big.png" alt="Логотип Техномарт" width="943" height="442">
     <button class="close map__close" type="button" aria-label="Закрыть"></button>
   </section>
 
