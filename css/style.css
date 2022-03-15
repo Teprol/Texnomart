@@ -662,10 +662,6 @@ input[type="submit"] {
   margin-bottom: 7px;
 }
 
-/* .user-login__container svg {
-  vertical-align: sub;
-} */
-
 .user-login-login__svg-left {
   margin-right: 19px;
 }
@@ -673,6 +669,18 @@ input[type="submit"] {
 .user-login__list-link {
   display: flex;
   justify-content: center;
+}
+
+.user-login__list-item {
+  position: relative;
+}
+
+.user-login__list-link .user-login__list-item:nth-of-type(1)::before {
+  content: "•";
+  position: absolute;
+  color: var(--text-black);
+  top: 0px;
+  right: -20px;
 }
 
 .user-login__list-link .user-login__list-item:first-child {
@@ -1096,9 +1104,9 @@ input[type="submit"] {
   width: 100px;
   background: red;
   text-align: center;
-  top: 9px;
+  top: 7px;
   right: -26px;
-  padding: 5px 0 6px;
+  padding: 6px 0 6px;
   font-family: Cuprum;
   font-style: normal;
   font-weight: normal;
@@ -1720,6 +1728,14 @@ li.about-us__item h3::before {
 .form-cena__item {
   width: 95px;
   min-height: 38px;
+  position: relative;
+}
+
+.form-cena__list li:first-child:before {
+  content: "–";
+  position: absolute;
+  top: 7px;
+  right: -19px;
 }
 
 .form-cena__item input {
@@ -1727,6 +1743,7 @@ li.about-us__item h3::before {
   height: 100%;
   box-sizing: border-box;
   border: none;
+  padding-left: 16px;
 }
 
 /* *-------------------------------интерактив -фильтр----------------------------------------------- */
@@ -2145,8 +2162,8 @@ li.about-us__item h3::before {
 
 .modal-item-cart__list {
   display: flex;
-  width: 394px;
   gap: 10px;
+  justify-content: center;
 }
 
 .modal-item-cart__wrapper {
