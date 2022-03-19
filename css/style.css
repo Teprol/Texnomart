@@ -1071,6 +1071,7 @@ input[type="submit"] {
   display: flex;
   width: 192px;
   padding: 11px 0 9px;
+  text-align: center;
 }
 
 .section-header__link span {
@@ -1095,6 +1096,8 @@ input[type="submit"] {
   padding: 6px 18px 20px;
   position: relative;
   overflow: hidden;
+  height: 100%;
+  max-height: 100%;
 }
 
 .new::before {
@@ -1285,7 +1288,7 @@ input[type="submit"] {
 .services__list-buttons button {
   display: flex;
   width: 100%;
-  height: 61px;
+  min-height: 61px;
   border: none;
   box-sizing: border-box;
   margin: 0;
@@ -1299,6 +1302,7 @@ input[type="submit"] {
   justify-content: flex-start;
   padding-left: 22px;
   margin-bottom: 1px;
+  word-break: break-all;
 }
 
 .services__list-buttons .services__list-buttons_active {
@@ -1334,6 +1338,7 @@ input[type="submit"] {
   top: 20px;
   right: 1px;
   background: url(/img/icons/icon-dostavka.png);
+  z-index: 1;
 }
 
 .services__carousel-garant::before {
@@ -1365,11 +1370,15 @@ input[type="submit"] {
 .services__carousel-title {
   margin: 0;
   margin-bottom: 28px;
+  position: relative;
+  z-index: 2;
 }
 
 .services__carousel-text {
   margin: 0;
   margin-bottom: 27px;
+  position: relative;
+  z-index: 2;
 }
 
 .services__container {
@@ -1397,7 +1406,8 @@ input[type="submit"] {
 /* !----------------------контейнер с информ о нас--------------------------------- */
 .info-kontakts {
   display: grid;
-  grid-template-columns: max-content max-content;
+  /* grid-template-columns: max-content max-content; */
+  grid-template-columns: 457px 300px;
   justify-content: space-between;
   /* gap: 180px; */
   padding-bottom: 70px;
@@ -2061,9 +2071,9 @@ li.about-us__item h3::before {
 .feedback {
   width: 620px;
   min-height: 430px;
-  position: absolute;
-  top: 2369px;
-  left: 413px;
+  position: fixed;
+  top: 155px;
+  left: 634px;
 }
 
 .feedback__wrapper {
@@ -2121,9 +2131,9 @@ li.about-us__item h3::before {
 
 .map {
   width: 943px;
-  position: absolute;
-  top: 2368px;
-  right: 222px;
+  position: fixed;
+  top: 255px;
+  right: 489px;
 }
 
 .map__img {
