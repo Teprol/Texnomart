@@ -136,7 +136,7 @@
 }
 
 /* *скрыть элемент */
-.visuallyhidden:not(:focus):not(:active) {
+.visuallyhidden {
   position: absolute;
 
   width: 1px;
@@ -193,7 +193,9 @@
 
 /** интерактив сток кнопки */
 .button-defolt-interactiv:hover,
-.goods-card__button:hover {
+.goods-card__button:hover,
+.button-defolt-interactiv:focus,
+.goods-card__button:focus {
   background: var(--hover-akcent-color);
 }
 
@@ -219,7 +221,8 @@ input[type="submit"] {
 }
 /* тени при наведении */
 .goods-card:hover,
-.popular-manufacturers__item:hover {
+.popular-manufacturers__item:hover,
+.popular-manufacturers__item:focus-within {
   -webkit-box-shadow: 0 4px 20px var(--shadow-kart-modal);
   box-shadow: 0 4px 20px var(--shadow-kart-modal);
 }
@@ -517,7 +520,8 @@ input[type="submit"] {
   opacity: 0.5;
 }
 
-.bookmarks-button:hover::before {
+.bookmarks-button:hover::before,
+.bookmarks-button:focus::before {
   opacity: 1;
 }
 
@@ -538,7 +542,8 @@ input[type="submit"] {
   opacity: 0.5;
 }
 
-.cart-button:hover::before {
+.cart-button:hover::before,
+.cart-button:focus::before {
   opacity: 1;
 }
 
@@ -828,11 +833,14 @@ input[type="submit"] {
 }
 /* *--------------------------интерактивность шапки----------------------------------------- */
 .form-search__content_active:hover::before,
-.list-bookmarks__item:nth-of-type(-n + 2):hover::before {
+.list-bookmarks__item:nth-of-type(-n + 2):hover::before,
+.form-search__content_active:focus::before,
+.list-bookmarks__item:nth-of-type(-n + 2):focus::before {
   opacity: 1;
 }
 
-.order-button:hover {
+.order-button:hover,
+.order-button:focus {
   background: var(--hover-success);
 }
 
@@ -910,13 +918,18 @@ input[type="submit"] {
 /* наведение на кнопки регистра и войти  */
 .header-content-middle__login:hover,
 .header-content-middle__registration:hover,
-.user-login__list-item:hover .link {
+.user-login__list-item:hover .link,
+.header-content-middle__login:focus,
+.header-content-middle__registration:focus,
+.user-login__list-item:focus .link {
   color: var(--akcent-color);
 }
 
 /* измин занчков свг при наведении */
 .header-content-middle__login:hover path,
-.user-login__container a:hover path {
+.user-login__container a:hover path,
+.header-content-middle__login:focus path,
+.user-login__container a:focus path {
   fill: var(--hover-icon);
 }
 
@@ -936,7 +949,8 @@ input[type="submit"] {
 }
 
 /* изминени при наведении на меню */
-.main-navigation__item:hover .link {
+.main-navigation__item:hover .link,
+.main-navigation__item .link:focus {
   background: var(--bg-dark);
 }
 
@@ -1113,7 +1127,8 @@ input[type="submit"] {
 }
 /** --------------------------интерактив промо--------------------------------- */
 /* наведение на кнопку  */
-.promo-product-card__link:hover {
+.promo-product-card__link:hover,
+.promo-product-card__link:focus {
   background: var(--grey-03);
 }
 
@@ -1408,7 +1423,8 @@ input[type="submit"] {
 
 /** -------------------интерактив стили для популяр товар-------------------- */
 /* кнопки в карточке */
-.goods-card__item-list:nth-of-type(1) button:hover {
+.goods-card__item-list:nth-of-type(1) button:hover,
+.goods-card__item-list:nth-of-type(1) button:focus {
   background: var(--hover-success);
 }
 
@@ -1416,7 +1432,8 @@ input[type="submit"] {
   background: var(--click-success);
 }
 
-.goods-card__item-list:nth-of-type(2) button:hover {
+.goods-card__item-list:nth-of-type(2) button:hover,
+.goods-card__item-list:nth-of-type(2) button:focus {
   border: 3px solid var(--text-dark);
 }
 
@@ -1610,7 +1627,8 @@ input[type="submit"] {
   gap: 80px;
 }
 
-.services__list-buttons button:hover {
+.services__list-buttons button:hover,
+.services__list-buttons button:focus {
   background: var(--bg-dark);
   -webkit-box-shadow: 0px 1px 0px var(--shadow-nav),
     inset 0px 1px 0px var(--shadow-slide-but);
@@ -1858,13 +1876,13 @@ li.about-us__item h3::before {
 }
 
 /*! --------------------фильтр--------------------------- */
-.form-manufacturers__list input {
+/* .form-manufacturers__list input {
   display: none;
 }
 
 .nutrition__list input {
   display: none;
-}
+} */
 
 .nutrition__item {
   margin-bottom: 16px;
@@ -2045,7 +2063,9 @@ li.about-us__item h3::before {
 /* отслеживает состояние чекбокса, при включеном нажатом отображает галочку, инчае галочки нет */
 
 .label-filter-manufacturers:hover::after,
-.label-filter-manufacturers:hover::before {
+.label-filter-manufacturers:hover::before,
+.form-manufacturers__item input:focus + .label-filter-manufacturers::before,
+.form-manufacturers__item input:focus + .label-filter-manufacturers::after {
   border-color: var(--border-hover-dark);
 }
 /* изминение цвета чекбокса при наведении */
@@ -2055,17 +2075,18 @@ li.about-us__item h3::before {
 }
 /* закрашивание радиобатена при нажатии */
 
-.nutrition__item label.label-filter-nutrition:hover::before {
+.nutrition__item label.label-filter-nutrition:hover::before,
+.nutrition__item input:focus ~ .label-filter-nutrition::before {
   /* background: var(--border-hover-dark); */
   outline-color: var(--border-hover-dark);
 }
 /* закрашивание обводки радиобатена при наведении в более темный цвет */
 
-.nutrition__item input:checked ~ .label-filter-nutrition:hover::before {
+.nutrition__item input:checked ~ .label-filter-nutrition:hover::before,
+.nutrition__item input:checked:focus ~ .label-filter-nutrition::before  {
   background: var(--border-hover-dark);
 }
 /* закрашивание фона радио батена при наведении в более темный цвет */
-
 /*! ----------------------------сортировка------------------------------ */
 .sorting__button {
   border-bottom: 1px dotted var(--akcent-color);
@@ -2090,15 +2111,18 @@ li.about-us__item h3::before {
 }
 
 /** ---------------интерактив сортировки--------------- */
-.sorting__button:hover {
+.sorting__button:hover,
+.sorting__button:focus {
   border-bottom: 1px solid red;
 }
-.sorting__button:hover span {
+.sorting__button:hover span,
+.sorting__button:focus span {
   opacity: 1;
   color: var(--text-black);
 }
 
-.arrows-button:hover path {
+.arrows-button:hover path,
+.arrows-button:focus path {
   fill: var(--text-black);
 }
 
@@ -2159,7 +2183,8 @@ li.about-us__item h3::before {
   margin: auto auto;
 }
 /* *---------------интерактив погинация----------------- */
-.pagination__item a:hover {
+.pagination__item a:hover,
+.pagination__item a:focus {
   border: 2px solid var(--border-dark);
 }
 
@@ -2341,11 +2366,15 @@ li.about-us__item h3::before {
 /** -------------------интерактив подвал--------------------------- */
 .footer-nav__item a:hover,
 .nav-promo-list__item a:hover,
-.footer-footer__feedback a:hover {
+.footer-footer__feedback a:hover,
+.footer-nav__item a:focus,
+.nav-promo-list__item a:focus,
+.footer-footer__feedback a:focus {
   text-decoration: underline;
 }
 
-.socials__list a:hover {
+.socials__list a:hover,
+.socials__list a:focus {
   background-color: var(--akcent-color);
 }
 

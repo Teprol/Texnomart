@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="/img/favicons/favicon_180x180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body class="page-body">
@@ -170,23 +170,23 @@
               <!-- *по производителям -->
               <ul class="list form-manufacturers__list">
                 <li class="form-manufacturers__item">
-                  <input type="checkbox" name="BOSCH" id="input_checkbox_bosch" checked>
+                  <input class="visuallyhidden" type="checkbox" name="BOSCH" id="input_checkbox_bosch" checked>
                   <label class="zagolovok-6 label-filter-manufacturers" for="input_checkbox_bosch">BOSCH</label>
                 </li>
                 <li class="form-manufacturers__item">
-                  <input type="checkbox" name="ИНТЕРСКОЛ" id="input_checkbox_interskol">
+                  <input class="visuallyhidden" class="visuallyhidden" type="checkbox" name="ИНТЕРСКОЛ" id="input_checkbox_interskol">
                   <label class="zagolovok-6 label-filter-manufacturers" for="input_checkbox_interskol">ИНТЕРСКОЛ</label>
                 </li>
                 <li class="form-manufacturers__item">
-                  <input type="checkbox" name="MAKIta" id="input_checkbox_MAKITA" checked>
+                  <input class="visuallyhidden" type="checkbox" name="MAKIta" id="input_checkbox_MAKITA" checked>
                   <label class="zagolovok-6 label-filter-manufacturers" for="input_checkbox_MAKITA">MAKITA</label>
                 </li>
                 <li class="form-manufacturers__item">
-                  <input type="checkbox" name="Dewalt" id="input_checkbox_DEWALT">
+                  <input class="visuallyhidden" type="checkbox" name="Dewalt" id="input_checkbox_DEWALT">
                   <label class="zagolovok-6 label-filter-manufacturers" for="input_checkbox_DEWALT">DEWALT</label>
                 </li>
                 <li class="form-manufacturers__item">
-                  <input type="checkbox" name="Hitachi" id="input_checkbox_HITACHI">
+                  <input class="visuallyhidden" type="checkbox" name="Hitachi" id="input_checkbox_HITACHI">
                   <label class="zagolovok-6 label-filter-manufacturers" for="input_checkbox_HITACHI">HITACHI</label>
                 </li>
               </ul>
@@ -197,11 +197,11 @@
               <!--* питание -->
               <ul class="list nutrition__list">
                 <li class="nutrition__item">
-                  <input type="radio" name="Питание" id="input_radio_akum" value="АККУМУЛЯТОРНЫЕ" checked>
+                  <input class="visuallyhidden" type="radio" name="Питание" id="input_radio_akum" value="АККУМУЛЯТОРНЫЕ" checked tabindex="0">
                   <label class="zagolovok-6 label-filter-nutrition" for="input_radio_akum">АККУМУЛЯТОРНЫЕ</label>
                 </li>
                 <li class="nutrition__item">
-                  <input type="radio" name="Питание" id="input_radio_set" value="СЕТЕВЫЕ">
+                  <input class="visuallyhidden" type="radio" name="Питание" id="input_radio_set" value="СЕТЕВЫЕ" tabindex="0">
                   <label class="zagolovok-6 label-filter-nutrition" for="input_radio_set">СЕТЕВЫЕ</label>
                 </li>
               </ul>
