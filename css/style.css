@@ -1489,8 +1489,7 @@ input[type="submit"] {
 .services {
   background: var(--text-footer-mid);
   padding-top: 65px;
-  /* padding-bottom: 98px; */
-  padding-bottom: 81px;
+  padding-bottom: 47px;
 }
 
 .page-main__services {
@@ -2083,7 +2082,7 @@ li.about-us__item h3::before {
 /* закрашивание обводки радиобатена при наведении в более темный цвет */
 
 .nutrition__item input:checked ~ .label-filter-nutrition:hover::before,
-.nutrition__item input:checked:focus ~ .label-filter-nutrition::before  {
+.nutrition__item input:checked:focus ~ .label-filter-nutrition::before {
   background: var(--border-hover-dark);
 }
 /* закрашивание фона радио батена при наведении в более темный цвет */
