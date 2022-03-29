@@ -1399,7 +1399,7 @@ input[type="submit"] {
   margin-bottom: 10px;
 }
 
-.goods-card__item-list:nth-of-type(1) button {
+.gods-card-buy-hidden {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
@@ -1410,6 +1410,19 @@ input[type="submit"] {
   -webkit-box-shadow: inset 0px -3px 0px var(--shadow-succes);
   box-shadow: inset 0px -3px 0px var(--shadow-succes);
   padding-left: 14px;
+  position: relative;
+}
+
+.gods-card-buy-hidden:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url(/img/icons/icon-cart.svg);
+  top: 9px;
+  left: 30px;
+  opacity: 0.3;
 }
 
 .goods-card__item-list:nth-of-type(2) button {
@@ -1426,12 +1439,12 @@ input[type="submit"] {
 
 /** -------------------интерактив стили для популяр товар-------------------- */
 /* кнопки в карточке */
-.goods-card__item-list:nth-of-type(1) button:hover,
-.goods-card__item-list:nth-of-type(1) button:focus {
+.gods-card-buy-hidden:hover,
+.gods-card-buy-hidden:focus {
   background: var(--hover-success);
 }
 
-.goods-card__item-list:nth-of-type(1) button:active {
+.gods-card-buy-hidden:active {
   background: var(--click-success);
 }
 
