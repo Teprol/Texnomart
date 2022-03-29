@@ -1641,7 +1641,6 @@ input[type="submit"] {
 
 .services__carousel-text {
   margin: 0;
-  /* margin-bottom: 27px; */
   position: relative;
   z-index: 2;
 }
@@ -1682,13 +1681,11 @@ input[type="submit"] {
 .info-kontakts {
   display: -ms-grid;
   display: grid;
-  /* grid-template-columns: max-content max-content; */
   -ms-grid-columns: 457px 300px;
   grid-template-columns: 457px 300px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  /* gap: 180px; */
   padding-bottom: 70px;
 }
 
@@ -1903,14 +1900,6 @@ li.about-us__item h3::before {
 }
 
 /*! --------------------фильтр--------------------------- */
-/* .form-manufacturers__list input {
-  display: none;
-}
-
-.nutrition__list input {
-  display: none;
-} */
-
 .nutrition__item {
   margin-bottom: 16px;
 }
@@ -2432,8 +2421,6 @@ input:disabled + label{
   height: 21px;
   display: inline-block;
   background: url(/img/icons/icon-close.svg);
-  /* top: 1px;
-  right: 1px; */
 }
 
 .modal {
@@ -2447,7 +2434,6 @@ input:disabled + label{
   box-shadow: 0 4px 20px var(--shadow-kart-modal);
   position: relative;
   z-index: 4;
-  /* display: none; */
 }
 .modal p {
   margin: 0;
