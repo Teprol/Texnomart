@@ -1145,6 +1145,7 @@ input[type="submit"] {
 }
 .carousel__item-drill {
   background: var(--grey) url(/img/fons/carusel_dreli.jpg) no-repeat;
+  display: none ;
 }
 
 .carousel__item-perforator {
@@ -1196,16 +1197,17 @@ input[type="submit"] {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 130px;
+  top: 129px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 27px 0 30px;
 }
 
-.carousel__contols li {
-  width: 25px;
-  height: 24px;
+.carousel__contols .carousel__contols-item {
+  display: block;
+  width: 28px;
+  height: 28px;
   border: 3px solid white;
   border-top: none;
   border-right: none;
@@ -1213,12 +1215,13 @@ input[type="submit"] {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   cursor: pointer;
+  background-color: transparent;
 }
 
-.carousel__contols li:last-child {
-  -webkit-transform: rotate(220deg);
-  -ms-transform: rotate(220deg);
-  transform: rotate(220deg);
+.carousel__contols li:last-child .carousel__contols-item {
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
 .carousel__radio {
@@ -1226,21 +1229,19 @@ input[type="submit"] {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 26px;
-  left: 46%;
-  padding: 10px;
+  bottom: 36px;
+  left: 295px;
   -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
   column-gap: 10px;
 }
 
-.carousel__radio li {
-  cursor: pointer;
+.carousel__radio .carousel__radio-item {
+  display: block;
   width: 10px;
   height: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: pointer;
   background: var(--text-white);
   border-radius: 50%;
   border: 2px solid var(--text-white);
@@ -1386,6 +1387,7 @@ input[type="submit"] {
 
 .goods-card__list-button {
   padding: 32px 22px 0;
+  display: none;
 }
 
 .goods-card__item-list button {
@@ -1442,6 +1444,14 @@ input[type="submit"] {
   opacity: 0.5;
 }
 
+.goods-card:hover .goods-card__img {
+  display: none;
+}
+
+.goods-card:hover .goods-card__list-button  {
+  display: block;
+}
+
 /* !-------------------------------популярные производители--------------------------------------------- */
 .page-main__popular-manufacturers {
   margin-bottom: 69px;
@@ -1489,7 +1499,7 @@ input[type="submit"] {
 .services {
   background: var(--text-footer-mid);
   padding-top: 65px;
-  padding-bottom: 47px;
+  padding-bottom: 98px;
 }
 
 .page-main__services {
@@ -1563,7 +1573,7 @@ input[type="submit"] {
 }
 
 .services__carousel-dostavka {
-  margin-bottom: 51px;
+  display: block;
 }
 
 .services__carousel-dostavka::before {
@@ -1578,6 +1588,10 @@ input[type="submit"] {
   z-index: 1;
 }
 
+.services__carousel-garant {
+  display: none;
+}
+
 .services__carousel-garant::before {
   content: "";
   display: inline-block;
@@ -1590,7 +1604,7 @@ input[type="submit"] {
 }
 
 .services__carousel-kredit {
-  margin-bottom: 34px;
+  display: none;
 }
 
 .services__carousel-kredit::before {
@@ -1613,7 +1627,7 @@ input[type="submit"] {
 
 .services__carousel-text {
   margin: 0;
-  margin-bottom: 27px;
+  /* margin-bottom: 27px; */
   position: relative;
   z-index: 2;
 }
@@ -1889,6 +1903,7 @@ li.about-us__item h3::before {
 
 .label-filter-manufacturers {
   position: relative;
+  cursor: pointer;
 }
 
 .label-filter-manufacturers::before {
@@ -2020,6 +2035,10 @@ li.about-us__item h3::before {
 
 .nutrition__title {
   margin-bottom: 24px;
+}
+
+.nutrition__list label {
+  cursor: pointer;
 }
 
 .nutrition__list li:last-of-type {
@@ -2421,6 +2440,7 @@ li.about-us__item h3::before {
   position: fixed;
   top: 155px;
   left: 634px;
+  display: none;
 }
 
 .feedback__wrapper {
@@ -2487,6 +2507,7 @@ li.about-us__item h3::before {
   position: fixed;
   top: 255px;
   right: 489px;
+  display: none;
 }
 
 .map__img {
@@ -2509,6 +2530,7 @@ li.about-us__item h3::before {
   position: absolute;
   top: 656px;
   left: 393px;
+  display: none;
 }
 
 .modal-item-cart__title {
