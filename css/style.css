@@ -1409,6 +1409,7 @@ input[type="submit"] {
   border-radius: 2px;
   -webkit-box-shadow: inset 0px -3px 0px var(--shadow-succes);
   box-shadow: inset 0px -3px 0px var(--shadow-succes);
+  padding-left: 14px;
 }
 
 .goods-card__item-list:nth-of-type(2) button {
@@ -2075,15 +2076,15 @@ li.about-us__item h3::before {
 }
 
 /* *-------------------------------интерактив -фильтр----------------------------------------------- */
-.form-manufacturers__item input:checked ~ .label-filter-manufacturers::after {
+.form-manufacturers__item-input:checked ~ .label-filter-manufacturers::after {
   display: inline-block;
 }
 /* отслеживает состояние чекбокса, при включеном нажатом отображает галочку, инчае галочки нет */
 
 .label-filter-manufacturers:hover::after,
 .label-filter-manufacturers:hover::before,
-.form-manufacturers__item input:focus + .label-filter-manufacturers::before,
-.form-manufacturers__item input:focus + .label-filter-manufacturers::after {
+.form-manufacturers__item-input:focus + .label-filter-manufacturers::before,
+.form-manufacturers__item-input:focus + .label-filter-manufacturers::after {
   border-color: var(--border-hover-dark);
 }
 /* изминение цвета чекбокса при наведении */
@@ -2105,6 +2106,11 @@ li.about-us__item h3::before {
   background: var(--border-hover-dark);
 }
 /* закрашивание фона радио батена при наведении в более темный цвет */
+
+/* если установлен заблокирован, то лабел к инпуту будет более тусклое, сделал через глобальные для того чтобы было на всем сайте */
+input:disabled + label{
+  opacity: 0.3;
+}
 /*! ----------------------------сортировка------------------------------ */
 .sorting__button {
   border-bottom: 1px dotted var(--akcent-color);
