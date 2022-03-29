@@ -1458,11 +1458,13 @@ input[type="submit"] {
   opacity: 0.5;
 }
 
-.goods-card:hover .goods-card__img {
+.goods-card:hover .goods-card__img,
+.goods-card:focus-within .goods-card__img{
   display: none;
 }
 
-.goods-card:hover .goods-card__list-button  {
+.goods-card:hover .goods-card__list-button,
+.goods-card:focus-within .goods-card__list-button{
   display: block;
 }
 
