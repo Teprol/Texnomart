@@ -28,11 +28,6 @@ buttonPopup.addEventListener('click', function () {
   };
 });
 
-closeFeedback.addEventListener('click', function () {
-  popupFeedback.classList.remove('feedback_open');
-  popupFeedback.classList.remove('feedback_error');
-}); // закрытие попапа и удаление всех классов с него
-
 submitFeedback.addEventListener('click', function () {
   if (!loginFeedback.value || !mailFeedback.value || !textFeedback.value) { // провекрка на незаполнение логина и мыла если не заполнено то присвоет анимацтю покачивания попапа
     popupFeedback.classList.add('feedback_error');
@@ -43,6 +38,17 @@ submitFeedback.addEventListener('click', function () {
   }
 });
 
+popupFeedback.addEventListener("animationend", AnimationHandler, false); //удаляет класс анимации после завершения ее
+function AnimationHandler () {
+  // Удаляем класс с анимацией
+  popupFeedback.classList.remove('feedback_error');
+};
+
+closeFeedback.addEventListener('click', function () {
+  popupFeedback.classList.remove('feedback_open');
+  popupFeedback.classList.remove('feedback_error');
+}); // закрытие попапа и удаление всех классов с него
+
 window.addEventListener('keydown', function (evt) { // если попап открыт то можно закрыть по esc
 if (evt.keyCode === 27) {
   if (popupFeedback.classList.contains('feedback_open')) {
@@ -52,19 +58,3 @@ if (evt.keyCode === 27) {
   }
 }
 });
-
-// if (window.localStorage) {
-//   var elements = document.querySelectorAll('[name]');
-
-//   for (var i = 0, length = elements.length; i < length; i++) {
-//     (function(element) {
-//       var name = element.getAttribute('name');
-
-//       element.value = localStorage.getItem(name) || element.value;
-
-//       element.onkeyup = function() {
-//         localStorage.setItem(name, element.value);
-//       };
-//     })(elements[i]);
-//   }
-// }

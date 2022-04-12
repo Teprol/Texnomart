@@ -1758,6 +1758,7 @@ li.about-us__item h3::before {
 
 .contacts__img {
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .contacts__link {
