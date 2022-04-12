@@ -6,6 +6,18 @@ const mailFeedback = popupFeedback.querySelector('[name=почта]');
 const submitFeedback = popupFeedback.querySelector('.feedback__form-submit input');
 const textFeedback = popupFeedback.querySelector('textarea');
 //переменнные для localStorage и открытия закрытия попапа
+let popupCloseEsc = function (namePopup) { //функция открыть закрыть по ESC
+  window.addEventListener('keydown', function (evt) { // если попап открыт то можно закрыть по esc
+    if (evt.keyCode === 27) {
+      if (namePopup.classList.contains('modal_open')) {
+        evt.preventDefault();
+        namePopup.classList.remove('modal_open');
+        namePopup.classList.remove('modal_error');
+      }
+    }
+  });
+}
+
 
 let storageSupport = true;
 let storage;
@@ -30,6 +42,8 @@ buttonPopup.addEventListener('click', function () {
 
 submitFeedback.addEventListener('click', function () {
   if (!loginFeedback.value || !mailFeedback.value || !textFeedback.value) { // провекрка на незаполнение логина и мыла если не заполнено то присвоет анимацтю покачивания попапа
+    popupFeedback.classList.remove('modal_error');
+    popupFeedback.offsetWidth = popupFeedback.offsetWidth; //хак дял повтороной анимации ошибки
     popupFeedback.classList.add('modal_error');
   } else { // если все гуд то запишет логин
     if (storageSupport) { //если стораж поддерживается
@@ -38,26 +52,13 @@ submitFeedback.addEventListener('click', function () {
   }
 });
 
-popupFeedback.addEventListener("animationend", AnimationHandler, false); //удаляет класс анимации после завершения ее
-function AnimationHandler() {
-  // Удаляем класс с анимацией
-  popupFeedback.classList.remove('modal_error');
-};
-
 closeFeedback.addEventListener('click', function () {
   popupFeedback.classList.remove('modal_open');
   popupFeedback.classList.remove('modal_error');
 }); // закрытие попапа и удаление всех классов с него
 
-window.addEventListener('keydown', function (evt) { // если попап открыт то можно закрыть по esc
-  if (evt.keyCode === 27) {
-    if (popupFeedback.classList.contains('modal_open')) {
-      evt.preventDefault();
-      popupFeedback.classList.remove('modal_open');
-      popupFeedback.classList.remove('modal_error');
-    }
-  }
-});
+popupCloseEsc(popupFeedback);
+
 
 const popupMap = document.querySelector('.map');
 const imgMapOpen = document.querySelector('.contacts__img');
@@ -73,12 +74,23 @@ mapClose.addEventListener('click', function (evt) {
   popupMap.classList.remove('modal_open');
 });
 
-window.addEventListener('keydown', function (evt) { // если попап открыт то можно закрыть по esc
-  if (evt.keyCode === 27) {
-    if (popupMap.classList.contains('modal_open')) {
-      evt.preventDefault();
-      popupMap.classList.remove('modal_open');
-      popupMap.classList.remove('modal_error');
-    }
-  }
+popupCloseEsc(popupMap);
+
+const popupBuy = document.querySelector('.modal-item-cart');
+let cardBuy = document.querySelectorAll('.popular-goods__card');
+const popupButClose = popupBuy.querySelector('.modal-item-cart__close');
+
+for (let i = 0; i < cardBuy.length; i++) { //счетчик который присваивает каждой кнопке открыть закрыть попап
+  let button = cardBuy[i];
+  button.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popupBuy.classList.add('modal_open');
+    popupBuy.style.left = '35%'; //переопределим стиль чтобы сместить попап чуть левее
+  });
+};
+
+popupButClose.addEventListener('click', function (evt) {
+  popupBuy.classList.remove('modal_open');
 });
+
+popupCloseEsc(popupBuy);

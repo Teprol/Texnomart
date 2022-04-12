@@ -203,6 +203,7 @@
 .goods-card__button:active {
   background: var(--click-akcent-color);
 }
+
 /*? переопределяет стили некоторых заголовков на черные */
 h2[class*="__title"],
 p[class*="__title"] *,
@@ -219,6 +220,7 @@ input[type="submit"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 /* тени при наведении */
 .goods-card:hover,
 .popular-manufacturers__item:hover,
@@ -230,6 +232,7 @@ input[type="submit"] {
 hr {
   margin: 0;
 }
+
 /* !классы шрифтов */
 
 .paragraf-1 {
@@ -359,6 +362,7 @@ input[type="submit"] {
 
   color: var(--text-black);
 }
+
 /* промопродукта тайтл */
 .promo-product-card__title {
   font-family: Cuprum;
@@ -404,11 +408,13 @@ input[type="submit"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .header-content-top {
   background: var(--bg-dark);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .header__content-top {
   margin-bottom: 46px;
 }
@@ -809,6 +815,7 @@ input[type="submit"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 /* !------------------------------шапка каталога----------------------------*/
 .page-main__breadcrumbs-list {
   margin-bottom: 19px;
@@ -831,6 +838,7 @@ input[type="submit"] {
   text-align: center;
   color: var(--text-black);
 }
+
 /* *--------------------------интерактивность шапки----------------------------------------- */
 .form-search__content_active:hover::before,
 .list-bookmarks__item:nth-of-type(-n + 2):hover::before,
@@ -882,6 +890,7 @@ input[type="submit"] {
   font-size: 18px;
   line-height: 24px;
 }
+
 .form-search__search-input:focus::-moz-placeholder {
   color: var(--text-black);
   font-family: Cuprum;
@@ -890,6 +899,7 @@ input[type="submit"] {
   font-size: 18px;
   line-height: 24px;
 }
+
 .form-search__search-input:focus:-ms-input-placeholder {
   color: var(--text-black);
   font-family: Cuprum;
@@ -898,6 +908,7 @@ input[type="submit"] {
   font-size: 18px;
   line-height: 24px;
 }
+
 .form-search__search-input:focus::-ms-input-placeholder {
   color: var(--text-black);
   font-family: Cuprum;
@@ -906,6 +917,7 @@ input[type="submit"] {
   font-size: 18px;
   line-height: 24px;
 }
+
 .form-search__search-input:focus::placeholder {
   color: var(--text-black);
   font-family: Cuprum;
@@ -958,6 +970,7 @@ input[type="submit"] {
 .main-navigation__item:active .link {
   background: var(--bg-click-menu-dark);
 }
+
 /* !----------------------промо ассортимент товаров-------------------------- */
 .promo-product {
   display: -ms-grid;
@@ -969,38 +982,47 @@ input[type="submit"] {
   gap: 20px;
   padding-bottom: 59px;
 }
+
 .promo-product > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
+
 .promo-product > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
+
 .promo-product > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
 }
+
 .promo-product > *:nth-child(4) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
+
 .promo-product > *:nth-child(5) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
 }
+
 .promo-product > *:nth-child(6) {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
 }
+
 .promo-product > *:nth-child(7) {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
+
 .promo-product > *:nth-child(8) {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
 }
+
 .promo-product > *:nth-child(9) {
   -ms-grid-row: 5;
   -ms-grid-column: 5;
@@ -1010,6 +1032,7 @@ input[type="submit"] {
   margin: 0;
   margin-bottom: 14px;
 }
+
 .promo-product-card {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1125,6 +1148,7 @@ input[type="submit"] {
   right: 31px;
   background: url(/img/icons/icon-car.svg);
 }
+
 /** --------------------------интерактив промо--------------------------------- */
 /* наведение на кнопку  */
 .promo-product-card__link:hover,
@@ -1143,14 +1167,16 @@ input[type="submit"] {
   box-sizing: border-box;
   min-height: 266px;
 }
+
 .carousel__item-drill {
   background: var(--grey) url(/img/fons/carusel_dreli.jpg) no-repeat;
-  display: none ;
+  display: none;
 }
 
 .carousel__item-perforator {
   background: var(--grey) url(/img/fons/carusel_perforator.png) no-repeat;
 }
+
 .carousel__header {
   background: var(--bg-slider-title);
   color: var(--text-white);
@@ -1459,12 +1485,12 @@ input[type="submit"] {
 }
 
 .goods-card:hover .goods-card__img,
-.goods-card:focus-within .goods-card__img{
+.goods-card:focus-within .goods-card__img {
   display: none;
 }
 
 .goods-card:hover .goods-card__list-button,
-.goods-card:focus-within .goods-card__list-button{
+.goods-card:focus-within .goods-card__list-button {
   display: block;
 }
 
@@ -1507,10 +1533,12 @@ input[type="submit"] {
 .popular-manufacturers__item img {
   margin: auto auto;
 }
+
 /* *---------интерактив производителя по клику------- */
 .popular-manufacturers__item:active {
   opacity: 0.5;
 }
+
 /* !-------------------------------сервисы------------------------------- */
 .services {
   background: var(--text-footer-mid);
@@ -1771,6 +1799,7 @@ li.about-us__item h3::before {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 /* !----------------------------main-catalog--------------------------------- */
 .page-main__grid-container {
   display: -ms-grid;
@@ -2084,6 +2113,7 @@ li.about-us__item h3::before {
 .form-manufacturers__item-input:checked ~ .label-filter-manufacturers::after {
   display: inline-block;
 }
+
 /* отслеживает состояние чекбокса, при включеном нажатом отображает галочку, инчае галочки нет */
 
 .label-filter-manufacturers:hover::after,
@@ -2092,11 +2122,13 @@ li.about-us__item h3::before {
 .form-manufacturers__item-input:focus + .label-filter-manufacturers::after {
   border-color: var(--border-hover-dark);
 }
+
 /* изминение цвета чекбокса при наведении */
 
 .nutrition__item input:checked ~ .label-filter-nutrition::before {
   background: var(--border-dark);
 }
+
 /* закрашивание радиобатена при нажатии */
 
 .nutrition__item label.label-filter-nutrition:hover::before,
@@ -2104,22 +2136,26 @@ li.about-us__item h3::before {
   /* background: var(--border-hover-dark); */
   outline-color: var(--border-hover-dark);
 }
+
 /* закрашивание обводки радиобатена при наведении в более темный цвет */
 
 .nutrition__item input:checked ~ .label-filter-nutrition:hover::before,
 .nutrition__item input:checked:focus ~ .label-filter-nutrition::before {
   background: var(--border-hover-dark);
 }
+
 /* закрашивание фона радио батена при наведении в более темный цвет */
 
 /* если установлен заблокирован, то лабел к инпуту будет более тусклое, сделал через глобальные для того чтобы было на всем сайте */
-input:disabled + label{
+input:disabled + label {
   opacity: 0.3;
 }
+
 /*! ----------------------------сортировка------------------------------ */
 .sorting__button {
   border-bottom: 1px dotted var(--akcent-color);
 }
+
 .sorting__button span {
   opacity: 0.3;
 }
@@ -2144,6 +2180,7 @@ input:disabled + label{
 .sorting__button:focus {
   border-bottom: 1px solid red;
 }
+
 .sorting__button:hover span,
 .sorting__button:focus span {
   opacity: 1;
@@ -2173,6 +2210,7 @@ input:disabled + label{
 .description-product__text {
   margin: 0;
 }
+
 /* !-------------------погинация--------------------------- */
 .pagination__list {
   list-style-type: none;
@@ -2211,6 +2249,7 @@ input:disabled + label{
 .pagination__item-link span {
   margin: auto auto;
 }
+
 /* *---------------интерактив погинация----------------- */
 .pagination__item a:hover,
 .pagination__item a:focus {
@@ -2226,6 +2265,7 @@ input:disabled + label{
   border: none;
   color: var(--text-white);
 }
+
 /* !--------------------------подвал---------------------- */
 .page-footer {
   background: var(--text-dark);
@@ -2417,6 +2457,7 @@ input:disabled + label{
   color: var(--akcent-color);
   text-decoration: none;
 }
+
 /*! ----------------------модальные окна------------------------- */
 .close {
   position: absolute;
@@ -2438,6 +2479,7 @@ input:disabled + label{
   position: relative;
   z-index: 4;
 }
+
 .modal p {
   margin: 0;
 }
@@ -2538,10 +2580,11 @@ input:disabled + label{
 
 .modal-item-cart {
   width: 620px;
-  position: absolute;
-  top: 656px;
-  left: 393px;
+  position: fixed;
+  top: 20%;
+  left: 40%;
   display: none;
+  opacity: 0;
 }
 
 .modal-item-cart__title {
@@ -2592,7 +2635,6 @@ input:disabled + label{
   right: 11px;
 }
 
-
 .modal_open {
   display: block;
   animation-name: openPopum;
@@ -2601,15 +2643,25 @@ input:disabled + label{
 }
 
 @keyframes shake {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
     background-color: white;
   }
-  10%, 30%, 50%, 70%, 90% {
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     transform: translateX(-10px);
     background-color: rgb(252, 228, 228);
   }
-  20%, 40%, 60%, 80% {
+
+  20%,
+  40%,
+  60%,
+  80% {
     transform: translateX(10px);
     background-color: white;
   }
@@ -2620,6 +2672,7 @@ input:disabled + label{
     opacity: 0;
     transform: translateY(-300px);
   }
+
   100% {
     opacity: 1;
   }
