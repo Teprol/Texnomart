@@ -2448,6 +2448,8 @@ input:disabled + label{
   top: 20%;
   left: 25%;
   display: none;
+  opacity: 0;
+  transition: opacity 4s;
 }
 
 .feedback__wrapper {
@@ -2591,8 +2593,17 @@ input:disabled + label{
 
 .feedback_open {
   display: block;
+  opacity: 1;
+  transition: opacity 4s;
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
 .feedback_error {
-
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
