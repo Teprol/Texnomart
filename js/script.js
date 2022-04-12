@@ -19,7 +19,7 @@ try {
 // проверка на поддержку localStorage, елси фолс то дальше запись не сделается в ключ
 
 buttonPopup.addEventListener('click', function () {
-  popupFeedback.classList.add('feedback_open'); // откроет попап
+  popupFeedback.classList.add('modal_open'); // откроет попап
   if (storage) {
     loginFeedback.value = storage;
     mailFeedback.focus();  //если запись в логине есть то кинет фокус на мыло
@@ -30,7 +30,7 @@ buttonPopup.addEventListener('click', function () {
 
 submitFeedback.addEventListener('click', function () {
   if (!loginFeedback.value || !mailFeedback.value || !textFeedback.value) { // провекрка на незаполнение логина и мыла если не заполнено то присвоет анимацтю покачивания попапа
-    popupFeedback.classList.add('feedback_error');
+    popupFeedback.classList.add('modal_error');
   } else { // если все гуд то запишет логин
     if (storageSupport) { //если стораж поддерживается
       localStorage.setItem('loginFeedback', loginFeedback.value);
@@ -41,20 +41,21 @@ submitFeedback.addEventListener('click', function () {
 popupFeedback.addEventListener("animationend", AnimationHandler, false); //удаляет класс анимации после завершения ее
 function AnimationHandler () {
   // Удаляем класс с анимацией
-  popupFeedback.classList.remove('feedback_error');
+  popupFeedback.classList.remove('modal_error');
 };
 
 closeFeedback.addEventListener('click', function () {
-  popupFeedback.classList.remove('feedback_open');
-  popupFeedback.classList.remove('feedback_error');
+  popupFeedback.classList.remove('modal_open');
+  popupFeedback.classList.remove('modal_error');
 }); // закрытие попапа и удаление всех классов с него
 
 window.addEventListener('keydown', function (evt) { // если попап открыт то можно закрыть по esc
 if (evt.keyCode === 27) {
-  if (popupFeedback.classList.contains('feedback_open')) {
+  if (popupFeedback.classList.contains('modal_open')) {
     evt.preventDefault();
-    popupFeedback.classList.remove('feedback_open');
-    popupFeedback.classList.remove('feedback_error');
+    popupFeedback.classList.remove('modal_open');
+    popupFeedback.classList.remove('modal_error');
   }
 }
 });
+
