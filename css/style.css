@@ -2445,8 +2445,8 @@ input:disabled + label{
   width: 620px;
   min-height: 430px;
   position: fixed;
-  top: 155px;
-  left: 634px;
+  top: 20%;
+  left: 25%;
   display: none;
 }
 
@@ -2586,4 +2586,13 @@ input:disabled + label{
 .modal-item-cart__close {
   top: 10px;
   right: 11px;
+}
+
+
+.feedback_open {
+  display: block;
+}
+
+.feedback_error {
+
 }

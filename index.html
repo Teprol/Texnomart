@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="/img/favicons/favicon_180x180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body class="page-body">
@@ -530,12 +530,12 @@
   <section class="modal feedback">
     <h2 class="visuallyhidden">Обратная связь</h2>
     <div class="feedback__wrapper">
-      <form class="form-feedback feedback__form-feedback" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form-feedback feedback__form-feedback" action="https://echo.htmlacademy.ru" method="post" id="feedback__form-feedback">
         <div class="feedback__top">
           <div class="form-login feedback__form-login">
             <p>
               <label class="paragraf-2" for="Avtorization_name">Ваше имя:</label>
-              <input class="paragraf-1" id="Avtorization_name" name="имя" placeholder="Имя Фамилия" type="text">
+              <input class="paragraf-1" id="Avtorization_name" name="имя" placeholder="Имя Фамилия" type="text" required>
             </p>
           </div>
 
@@ -543,7 +543,7 @@
             <p>
               <label class="paragraf-2" for="Avtorization_mail">Ваш e-mail:</label>
               <input class="paragraf-1" id="Avtorization_mail" name="почта" placeholder="email@example.com"
-                type="email">
+                type="email" required>
             </p>
           </div>
         </div>
@@ -551,12 +551,12 @@
         <div class="form-user-text feedback__form-user-text">
           <p><label class="paragraf-2" for="Avtorization_text">Текст письма:</label></p>
           <textarea name="текст" class="paragraf-1" id="Avtorization_text" cols="60" rows="4"
-            placeholder="В свободной форме"></textarea>
+            placeholder="В свободной форме" required></textarea>
         </div>
       </form>
     </div>
     <div class="form-submit feedback__form-submit">
-      <input type="submit">
+      <input type="submit" form="feedback__form-feedback" _blank>
     </div>
     <button class="close feedback__close" type="button" aria-label="Закрыть"></button>
   </section>
