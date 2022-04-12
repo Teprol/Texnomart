@@ -2515,9 +2515,10 @@ input:disabled + label{
 .map {
   width: 943px;
   position: fixed;
-  top: 255px;
-  right: 489px;
-  display: block;
+  top: 30%;
+  right: 23%;
+  display: none;
+  opacity: 0;
 }
 
 .map__img {

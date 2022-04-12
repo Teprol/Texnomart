@@ -1,6 +1,6 @@
 const buttonPopup = document.querySelector('.contacts__link');
 const popupFeedback = document.querySelector('.feedback');
-const closeFeedback  = popupFeedback.querySelector('.feedback__close');
+const closeFeedback = popupFeedback.querySelector('.feedback__close');
 const loginFeedback = popupFeedback.querySelector('[name=имя]');
 const mailFeedback = popupFeedback.querySelector('[name=почта]');
 const submitFeedback = popupFeedback.querySelector('.feedback__form-submit input');
@@ -39,7 +39,7 @@ submitFeedback.addEventListener('click', function () {
 });
 
 popupFeedback.addEventListener("animationend", AnimationHandler, false); //удаляет класс анимации после завершения ее
-function AnimationHandler () {
+function AnimationHandler() {
   // Удаляем класс с анимацией
   popupFeedback.classList.remove('modal_error');
 };
@@ -50,12 +50,35 @@ closeFeedback.addEventListener('click', function () {
 }); // закрытие попапа и удаление всех классов с него
 
 window.addEventListener('keydown', function (evt) { // если попап открыт то можно закрыть по esc
-if (evt.keyCode === 27) {
-  if (popupFeedback.classList.contains('modal_open')) {
-    evt.preventDefault();
-    popupFeedback.classList.remove('modal_open');
-    popupFeedback.classList.remove('modal_error');
+  if (evt.keyCode === 27) {
+    if (popupFeedback.classList.contains('modal_open')) {
+      evt.preventDefault();
+      popupFeedback.classList.remove('modal_open');
+      popupFeedback.classList.remove('modal_error');
+    }
   }
-}
 });
 
+const popupMap = document.querySelector('.map');
+const imgMapOpen = document.querySelector('.contacts__img');
+const mapClose = popupMap.querySelector('.map__close');
+
+imgMapOpen.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popupMap.classList.add('modal_open');
+});
+
+mapClose.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popupMap.classList.remove('modal_open');
+});
+
+window.addEventListener('keydown', function (evt) { // если попап открыт то можно закрыть по esc
+  if (evt.keyCode === 27) {
+    if (popupMap.classList.contains('modal_open')) {
+      evt.preventDefault();
+      popupMap.classList.remove('modal_open');
+      popupMap.classList.remove('modal_error');
+    }
+  }
+});
