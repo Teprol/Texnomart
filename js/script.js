@@ -59,7 +59,6 @@ closeFeedback.addEventListener('click', function () {
 
 popupCloseEsc(popupFeedback);
 
-
 const popupMap = document.querySelector('.map');
 const imgMapOpen = document.querySelector('.contacts__img');
 const mapClose = popupMap.querySelector('.map__close');
@@ -77,7 +76,7 @@ mapClose.addEventListener('click', function (evt) {
 popupCloseEsc(popupMap);
 
 const popupBuy = document.querySelector('.modal-item-cart');
-let cardBuy = document.querySelectorAll('.popular-goods__card');
+let cardBuy = document.querySelectorAll('.gods-card-buy-hidden');
 const popupButClose = popupBuy.querySelector('.modal-item-cart__close');
 
 for (let i = 0; i < cardBuy.length; i++) { //счетчик который присваивает каждой кнопке открыть закрыть попап
@@ -92,5 +91,65 @@ for (let i = 0; i < cardBuy.length; i++) { //счетчик который пр�
 popupButClose.addEventListener('click', function (evt) {
   popupBuy.classList.remove('modal_open');
 });
-
 popupCloseEsc(popupBuy);
+
+//ниже функция слайдера
+const caruselNext = document.querySelector('.carousel__contols li:last-child .carousel__contols-item');
+const caruselback = document.querySelector('.carousel__contols .carousel__contols-item');
+let slideIndex = 1;
+
+let nextSlide = function () {
+  showSlides((slideIndex += 1));
+};
+let backSlide = function () {
+  showSlides((slideIndex -= 1));
+};
+
+let showSlides = function (n) {
+  let slides = document.querySelectorAll(".carousel__item");
+  let circles = document.querySelectorAll('.carousel__radio-item');
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let slide of slides) {
+    slide.style.display = "none";
+  }
+  for (let circle of circles) {
+    circle.style.backgroundColor = 'white';
+  }
+  slides[slideIndex - 1].style.display = "block";
+  circles[slideIndex - 1].style.backgroundColor = 'red';
+};
+
+caruselNext.addEventListener("click", function () {
+  nextSlide();
+});
+
+caruselback.addEventListener("click", function () {
+  backSlide();
+});
+showSlides(slideIndex);
+
+//сервис работа слайдера
+let serviceSlide = function () {
+  const serviceButtonList = document.querySelector('.services__list-buttons');
+  const serviceButtons = serviceButtonList.querySelectorAll('button');
+  const serviceSlide = document.querySelectorAll('.services__carousel-item');
+
+  for (let i = 0; i < serviceButtons.length; i++) {
+    serviceButtons[i].addEventListener('click', function () {
+      for (let q = 0; q < serviceSlide.length; q++) {
+        serviceSlide[q].style.display = 'none';
+        serviceButtons[q].classList.remove('services__list-buttons_active');
+      }
+      serviceSlide[i].style.display = 'block';
+      serviceButtons[i].classList.add('services__list-buttons_active');
+    })
+  }
+
+}
+serviceSlide();
