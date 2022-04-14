@@ -5,7 +5,6 @@
 * Browsers: last 4 version
 */
 
-/* *подключили шрифты */
 
 @font-face {
   font-family: "Cuprum";
@@ -2732,7 +2731,3 @@ input:disabled + label {
   -webkit-animation-duration: 0.6s;
   animation-duration: 0.6s;
 }
-
-/* .feedback_open {
-  display: block;
-} */
