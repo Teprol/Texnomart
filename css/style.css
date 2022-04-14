@@ -10,8 +10,8 @@
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"), local("My Cuprum"),
-    url(/fonts/cuprum.woff2) format("woff2"),
-    url(/fonts/cuprum.woff) format("woff");
+    url(../fonts/cuprum.woff2) format("woff2"),
+    url(../fonts/cuprum.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -19,8 +19,8 @@
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"), local("My Cuprum"),
-    url(/fonts/cuprumbold.woff2) format("woff2"),
-    url(/fonts/cuprumbold.woff) format("woff");
+    url(../fonts/cuprumbold.woff2) format("woff2"),
+    url(../fonts/cuprumbold.woff) format("woff");
   font-style: normal;
   font-weight: 700;
 }
@@ -28,8 +28,8 @@
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"), local("My Cuprum"),
-    url(/fonts/cuprumbolditalic.woff2) format("woff2"),
-    url(/fonts/cuprumbolditalic.woff) format("woff");
+    url(../fonts/cuprumbolditalic.woff2) format("woff2"),
+    url(../fonts/cuprumbolditalic.woff) format("woff");
   font-style: italic;
   font-weight: 700;
 }
@@ -37,8 +37,8 @@
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"), local("My Cuprum"),
-    url(/fonts/cuprumitalic.woff2) format("woff2"),
-    url(/fonts/cuprumitalic.woff) format("woff");
+    url(../fonts/cuprumitalic.woff2) format("woff2"),
+    url(../fonts/cuprumitalic.woff) format("woff");
   font-style: italic;
   font-weight: 400;
 }
@@ -46,8 +46,8 @@
 @font-face {
   font-family: "PT Sans";
   src: local("PT Sans"), local("PTSans"),
-    url(/fonts/ptsans.woff2) format("woff2"),
-    url(/fonts/ptsans.woff) format("woff");
+    url(../fonts/ptsans.woff2) format("woff2"),
+    url(../fonts/ptsans.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -55,8 +55,8 @@
 @font-face {
   font-family: "PT Sans";
   src: local("PT Sans"), local("PTSans"),
-    url(/fonts/ptsansbold.woff2) format("woff2"),
-    url(/fonts/ptsansbold.woff) format("woff");
+    url(../fonts/ptsansbold.woff2) format("woff2"),
+    url(../fonts/ptsansbold.woff) format("woff");
   font-style: normal;
   font-weight: 700;
 }
@@ -522,7 +522,7 @@ input[type="submit"] {
   left: 20px;
   width: 14px;
   height: 16px;
-  background: url(/img/icons/icon-bookmark.svg);
+  background: url(../img/icons/icon-bookmark.svg);
   opacity: 0.5;
 }
 
@@ -544,7 +544,7 @@ input[type="submit"] {
   position: absolute;
   top: 4px;
   left: 26px;
-  background: url(/img/icons/icon-cart.svg);
+  background: url(../img/icons/icon-cart.svg);
   opacity: 0.5;
 }
 
@@ -611,7 +611,7 @@ input[type="submit"] {
   position: absolute;
   width: 19px;
   height: 19px;
-  background: url(/img/icons/icon-phone.svg);
+  background: url(../img/icons/icon-phone.svg);
   top: 3px;
   left: -34px;
 }
@@ -683,7 +683,7 @@ input[type="submit"] {
   position: absolute;
   width: 17px;
   height: 17px;
-  background: url(/img/icons/icon-search.svg);
+  background: url(../img/icons/icon-search.svg);
   top: 12px;
   left: 17px;
 }
@@ -694,17 +694,17 @@ input[type="submit"] {
   position: absolute;
   width: 17px;
   height: 17px;
-  background: url(/img/icons/icon-search.svg);
+  background: url(../img/icons/icon-search.svg);
   top: 12px;
   left: 17px;
 }
 
 .form-search__content:hover::before {
-  background: url(/img/icons/icon-search-white.svg);
+  background: url(../img/icons/icon-search-white.svg);
 }
 
 .form-search__content:focus-within::before {
-  background: url(/img/icons/icon-search-red.svg);
+  background: url(../img/icons/icon-search-red.svg);
 }
 
 .header-content-middle__opisanie {
@@ -1082,7 +1082,7 @@ input[type="submit"] {
   position: absolute;
   top: 31px;
   right: 43px;
-  background: url(/img/icons/icon-bank_kraski.svg);
+  background: url(../img/icons/icon-bank_kraski.svg);
 }
 
 .promo-product__card-instrument {
@@ -1098,7 +1098,7 @@ input[type="submit"] {
   position: absolute;
   top: 34px;
   right: 31px;
-  background: url(/img/icons/icon-shurupovert.svg);
+  background: url(../img/icons/icon-shurupovert.svg);
 }
 
 .promo-product__card-technics {
@@ -1114,7 +1114,7 @@ input[type="submit"] {
   position: absolute;
   top: 31px;
   right: 31px;
-  background: url(/img/icons/icon-traktor.svg);
+  background: url(../img/icons/icon-traktor.svg);
 }
 
 .promo-product__card-sale {
@@ -1130,7 +1130,7 @@ input[type="submit"] {
   position: absolute;
   top: 26px;
   right: 45px;
-  background: url(/img/icons/icon-karzina.svg);
+  background: url(../img/icons/icon-karzina.svg);
 }
 
 .promo-product__card-deliveri {
@@ -1146,7 +1146,7 @@ input[type="submit"] {
   position: absolute;
   top: 32px;
   right: 31px;
-  background: url(/img/icons/icon-car.svg);
+  background: url(../img/icons/icon-car.svg);
 }
 
 /** --------------------------интерактив промо--------------------------------- */
@@ -1169,12 +1169,12 @@ input[type="submit"] {
 }
 
 .carousel__item-drill {
-  background: var(--grey) url(/img/fons/carusel_dreli.jpg) no-repeat;
+  background: var(--grey) url(../img/fons/carusel_dreli.jpg) no-repeat;
   display: none;
 }
 
 .carousel__item-perforator {
-  background: var(--grey) url(/img/fons/carusel_perforator.png) no-repeat;
+  background: var(--grey) url(../img/fons/carusel_perforator.png) no-repeat;
 }
 
 .carousel__header {
@@ -1445,7 +1445,7 @@ input[type="submit"] {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(/img/icons/icon-cart.svg);
+  background: url(../img/icons/icon-cart.svg);
   top: 9px;
   left: 30px;
   opacity: 0.3;
@@ -1563,7 +1563,7 @@ input[type="submit"] {
   left: 230px;
   height: 279px;
   width: 10px;
-  background: url(/img/icons/shadow-servic.png);
+  background: url(../img/icons/shadow-servic.png);
 }
 
 .services__list-buttons button {
@@ -1628,7 +1628,7 @@ input[type="submit"] {
   position: absolute;
   top: 20px;
   right: 1px;
-  background: url(/img/icons/icon-dostavka.png);
+  background: url(../img/icons/icon-dostavka.png);
   z-index: 1;
 }
 
@@ -1644,7 +1644,7 @@ input[type="submit"] {
   position: absolute;
   top: -2px;
   right: -87px;
-  background: url(/img/icons/icon-medalka.png);
+  background: url(../img/icons/icon-medalka.png);
 }
 
 .services__carousel-kredit {
@@ -1659,7 +1659,7 @@ input[type="submit"] {
   position: absolute;
   top: -8px;
   right: -13px;
-  background: url(/img/icons/icon-kredit.png);
+  background: url(../img/icons/icon-kredit.png);
 }
 
 .services__carousel-title {
@@ -1923,7 +1923,7 @@ li.about-us__item h3::before {
   position: absolute;
   top: 3px;
   right: -26px;
-  background: url(/img/icons/icon-right-small.svg) no-repeat;
+  background: url(../img/icons/icon-right-small.svg) no-repeat;
   background-size: contain;
 }
 
@@ -2369,19 +2369,19 @@ input:disabled + label {
 }
 
 .socials__item-vk a {
-  background-image: url(/img/icons/icon-vk.svg);
+  background-image: url(../img/icons/icon-vk.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .socials__item-fb a {
-  background-image: url(/img/icons/icon-facebook.svg);
+  background-image: url(../img/icons/icon-facebook.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .socials__item-inst a {
-  background-image: url(/img/icons/icon-insta.svg);
+  background-image: url(../img/icons/icon-insta.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -2464,7 +2464,7 @@ input:disabled + label {
   width: 21px;
   height: 21px;
   display: inline-block;
-  background: url(/img/icons/icon-close.svg);
+  background: url(../img/icons/icon-close.svg);
 }
 
 .modal {
@@ -2601,7 +2601,7 @@ input:disabled + label {
   width: 66px;
   height: 66px;
   position: absolute;
-  background: url(/img/icons/icon-mark.svg);
+  background: url(../img/icons/icon-mark.svg);
   top: 47px;
   left: 80px;
 }
