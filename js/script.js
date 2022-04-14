@@ -6,8 +6,10 @@ const mailFeedback = popupFeedback.querySelector('[name=почта]');
 const submitFeedback = popupFeedback.querySelector('.feedback__form-submit input');
 const textFeedback = popupFeedback.querySelector('textarea');
 //переменнные для localStorage и открытия закрытия попапа
-let popupCloseEsc = function (namePopup) { //функция открыть закрыть по ESC
-  window.addEventListener('keydown', function (evt) { // если попап открыт то можно закрыть по esc
+let popupCloseEsc = function (namePopup) {
+  //функция открыть закрыть по ESC
+  window.addEventListener('keydown', function (evt) {
+    // если попап открыт то можно закрыть по esc
     if (evt.keyCode === 27) {
       if (namePopup.classList.contains('modal_open')) {
         evt.preventDefault();
@@ -31,22 +33,29 @@ try {
 // проверка на поддержку localStorage, елси фолс то дальше запись не сделается в ключ
 
 buttonPopup.addEventListener('click', function () {
-  popupFeedback.classList.add('modal_open'); // откроет попап
+  popupFeedback.classList.add('modal_open');
+  // откроет попап
   if (storage) {
     loginFeedback.value = storage;
-    mailFeedback.focus();  //если запись в логине есть то кинет фокус на мыло
+    mailFeedback.focus();
+    //если запись в логине есть то кинет фокус на мыло
   } else {
-    loginFeedback.focus(); //если логина нет, то на него фоку
+    loginFeedback.focus();
+    //если логина нет, то на него фоку
   };
 });
 
 submitFeedback.addEventListener('click', function () {
-  if (!loginFeedback.value || !mailFeedback.value || !textFeedback.value) { // провекрка на незаполнение логина и мыла если не заполнено то присвоет анимацтю покачивания попапа
+  if (!loginFeedback.value || !mailFeedback.value || !textFeedback.value) {
+    // провекрка на незаполнение логина и мыла если не заполнено то присвоет анимацтю покачивания попапа
     popupFeedback.classList.remove('modal_error');
-    popupFeedback.offsetWidth = popupFeedback.offsetWidth; //хак дял повтороной анимации ошибки
+    popupFeedback.offsetWidth = popupFeedback.offsetWidth;
+    //хак дял повтороной анимации ошибки
     popupFeedback.classList.add('modal_error');
-  } else { // если все гуд то запишет логин
-    if (storageSupport) { //если стораж поддерживается
+  } else {
+    // если все гуд то запишет логин
+    if (storageSupport) {
+      //если стораж поддерживается
       localStorage.setItem('loginFeedback', loginFeedback.value);
     }
   }
@@ -55,7 +64,8 @@ submitFeedback.addEventListener('click', function () {
 closeFeedback.addEventListener('click', function () {
   popupFeedback.classList.remove('modal_open');
   popupFeedback.classList.remove('modal_error');
-}); // закрытие попапа и удаление всех классов с него
+});
+// закрытие попапа и удаление всех классов с него
 
 popupCloseEsc(popupFeedback);
 
@@ -79,12 +89,14 @@ const popupBuy = document.querySelector('.modal-item-cart');
 let cardBuy = document.querySelectorAll('.gods-card-buy-hidden');
 const popupButClose = popupBuy.querySelector('.modal-item-cart__close');
 
-for (let i = 0; i < cardBuy.length; i++) { //счетчик который присваивает каждой кнопке открыть закрыть попап
+for (let i = 0; i < cardBuy.length; i++) {
+  //счетчик который присваивает каждой кнопке открыть закрыть попап
   let button = cardBuy[i];
   button.addEventListener('click', function (evt) {
     evt.preventDefault();
     popupBuy.classList.add('modal_open');
-    popupBuy.style.left = '35%'; //переопределим стиль чтобы сместить попап чуть левее
+    popupBuy.style.left = '35%';
+    //переопределим стиль чтобы сместить попап чуть левее
   });
 };
 
@@ -111,16 +123,16 @@ let showSlides = function (n) {
 
   if (n > slides.length) {
     slideIndex = 1;
-  }
+  };
   if (n < 1) {
     slideIndex = slides.length;
-  }
+  };
   for (let slide of slides) {
     slide.style.display = "none";
-  }
+  };
   for (let circle of circles) {
     circle.style.backgroundColor = 'white';
-  }
+  };
   slides[slideIndex - 1].style.display = "block";
   circles[slideIndex - 1].style.backgroundColor = 'red';
 };
