@@ -1,6 +1,7 @@
 # Texnomart
 Интернет магазин Техномарт
 [ссылка на макет](https://www.figma.com/file/ZSVHoDJgEpCxT8rBPqDo57/HTML-1-/-%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BC%D0%B0%D1%80%D1%82-%2831%29?type=design&node-id=0-1&mode=design)
+[ссылка на проект](https://teprol.github.io/Texnomart/)
 ## Технологии
  - CSS
  - HTML
